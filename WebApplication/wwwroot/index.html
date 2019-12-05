@@ -4,16 +4,14 @@
     <title>index</title>
 </head>
 <body>
-<input data-bind="textInput: id"/>
+Post ID: <input data-bind="textInput: Id"/>
 <button data-bind="click: findId">Examine</button>
 <div>
     Mark: <input data-bind='checked: markPost' type='checkbox'/>
 </div>
-<ul data-bind="foreach: post">
-    <li>
-        <span data-bind="text: $data"></span>   
-    </li>
-</ul>
+<div>
+    <span data-bind="text: $data"></span>
+</div>
 
 <script data-main="js/main.js" src="lib/requirejs/require.js"></script>
 </body>
