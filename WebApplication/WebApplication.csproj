@@ -16,4 +16,16 @@
     <Folder Include="wwwroot" />
   </ItemGroup>
 
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\lib\wwwroot\lib\jqcloud2\dist\jqcloud.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\wwwroot\lib\jqcloud2\dist\jqcloud.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\wwwroot\lib\jqcloud2\dist\jqcloud.min.css" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\wwwroot\lib\jqcloud2\dist\jqcloud.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\wwwroot\lib\jquery\dist\jquery.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\wwwroot\lib\jquery\dist\jquery.min.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\wwwroot\lib\knockout\build\output\knockout-latest.debug.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\wwwroot\lib\knockout\build\output\knockout-latest.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\lib\wwwroot\lib\requirejs\require.js" />
+  </ItemGroup>
+
 </Project>
