@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using SOVAWeb;
@@ -15,6 +16,7 @@ namespace WebServiceToken
     {
         public static void Main(string[] args)
         {
+            Debug.WriteLine("TEST");
             CreateHostBuilder(args).Build().Run();
         }
 

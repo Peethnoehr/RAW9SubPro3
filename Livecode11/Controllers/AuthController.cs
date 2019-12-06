@@ -1,6 +1,7 @@
 ﻿﻿using System;
 using System.Collections.Generic;
-using System.IdentityModel.Tokens.Jwt;
+ using System.Diagnostics;
+ using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
 using System.Text;
@@ -75,6 +76,7 @@ namespace WebServiceToken.Controllers
 
             if (user == null)
             {
+                Debug.WriteLine("user is null, bad request");
                 return BadRequest();
             }
 
@@ -91,6 +93,8 @@ namespace WebServiceToken.Controllers
 
             if(user.Password != pwd)
             {
+                Debug.WriteLine(user.Password + " : " + pwd);
+                Debug.WriteLine("hashed password does not match, bad request");
                 return BadRequest();
             }
 
