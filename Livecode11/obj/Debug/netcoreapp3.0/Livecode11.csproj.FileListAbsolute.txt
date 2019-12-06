@@ -1,0 +1,87 @@
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\appsettings.json
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\libman.json
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\Livecode11.exe
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\Livecode11.deps.json
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\Livecode11.runtimeconfig.json
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\Livecode11.runtimeconfig.dev.json
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\Livecode11.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\Livecode11.pdb
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\obj\Debug\netcoreapp3.0\Livecode11.csprojAssemblyReference.cache
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\obj\Debug\netcoreapp3.0\staticwebassets\Livecode11.StaticWebAssets.Manifest.cache
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\obj\Debug\netcoreapp3.0\staticwebassets\Livecode11.StaticWebAssets.xml
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\obj\Debug\netcoreapp3.0\Livecode11.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\obj\Debug\netcoreapp3.0\Livecode11.AssemblyInfoInputs.cache
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\obj\Debug\netcoreapp3.0\Livecode11.AssemblyInfo.cs
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\obj\Debug\netcoreapp3.0\Livecode11.RazorTargetAssemblyInfo.cache
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\obj\Debug\netcoreapp3.0\Livecode11.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\obj\Debug\netcoreapp3.0\Livecode11.pdb
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\Microsoft.Bcl.HashCode.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Options.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\Npgsql.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\System.Collections.Immutable.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\System.ComponentModel.Annotations.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\DataAccessLayer.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\bin\Debug\netcoreapp3.0\DataAccessLayer.pdb
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11\Livecode11\obj\Debug\netcoreapp3.0\Livecode11.csproj.CopyComplete
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\obj\Debug\netcoreapp3.0\Livecode11.csprojAssemblyReference.cache
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\obj\Debug\netcoreapp3.0\staticwebassets\Livecode11.StaticWebAssets.Manifest.cache
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\obj\Debug\netcoreapp3.0\staticwebassets\Livecode11.StaticWebAssets.xml
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\obj\Debug\netcoreapp3.0\Livecode11.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\obj\Debug\netcoreapp3.0\Livecode11.AssemblyInfoInputs.cache
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\obj\Debug\netcoreapp3.0\Livecode11.AssemblyInfo.cs
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\obj\Debug\netcoreapp3.0\Livecode11.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\obj\Debug\netcoreapp3.0\Livecode11.pdb
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\bin\Debug\netcoreapp3.0\appsettings.Development.json
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\bin\Debug\netcoreapp3.0\appsettings.json
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\bin\Debug\netcoreapp3.0\libman.json
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\bin\Debug\netcoreapp3.0\Properties\launchSettings.json
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\bin\Debug\netcoreapp3.0\Livecode11.exe
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\bin\Debug\netcoreapp3.0\Livecode11.deps.json
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\bin\Debug\netcoreapp3.0\Livecode11.runtimeconfig.json
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\bin\Debug\netcoreapp3.0\Livecode11.runtimeconfig.dev.json
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\bin\Debug\netcoreapp3.0\Livecode11.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\bin\Debug\netcoreapp3.0\Livecode11.pdb
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\bin\Debug\netcoreapp3.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\bin\Debug\netcoreapp3.0\Npgsql.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\bin\Debug\netcoreapp3.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\bin\Debug\netcoreapp3.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\bin\Debug\netcoreapp3.0\DataAccessLayer.dll
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\bin\Debug\netcoreapp3.0\DataAccessLayer.pdb
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\obj\Debug\netcoreapp3.0\Livecode11.RazorTargetAssemblyInfo.cache
+C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi\Livecode11\obj\Debug\netcoreapp3.0\Livecode11.csproj.CopyComplete
