@@ -4,16 +4,15 @@
         var width = params.width || 200;
         var height = params.height || 200;
         var words = [];
-        var testUser = "";
         var word = ko.observable();
         var weight = ko.observable();
         var inputusername = ko.observable();
         var inputpassword = ko.observable();
-        var username = ko.observable();
+        var username = ko.observable("test");
         var login = function() {
-            //username(ds.login(inputusername, inputpassword));
-            ds.login();
-            //          //   api/auth/tokens
+            ds.login(data => {
+            username(data.userName);
+        },inputusername(),inputpassword());
         };
         
         var addWord = function() {

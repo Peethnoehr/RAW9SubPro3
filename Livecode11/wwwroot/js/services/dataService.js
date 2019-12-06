@@ -11,10 +11,11 @@
         callback(data);
     };
 
-    var login = async function(callback) {
-        alert("test");
+    var login = async function(callback, inputusername, inputpassword) {
+        alert("username input: "+inputusername);
+        alert("password input: "+inputpassword);
+        var credentials = {UserName:inputusername, Password:inputpassword};
         var response = await fetch("api/auth/tokens",{
-
             method: 'POST', // *GET, POST, PUT, DELETE, etc.
             mode: 'cors', // no-cors, *cors, same-origin
             cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
@@ -25,11 +26,14 @@
             },
             redirect: 'follow', // manual, *follow, error
             referrer: 'no-referrer', // no-referrer, *client
-            body: JSON.stringify({"UserName":"Test","Password":"TestPW"}) // body data type must match "Content-Type" header
+            body: JSON.stringify(credentials) // body data type must match "Content-Type" header
         });
-        alert("test2");
+        alert("After fetch");
         var data = await response.json();
-        alert(JSON.stringify(data));
+        alert("Stringified credentials: "+JSON.stringify(credentials));
+        alert("Stringified hardcoded input: "+JSON.stringify({"UserName":"Test","Password":"TestPW"}));
+        alert("Stringified output: "+JSON.stringify(data));
+        alert("returned username: "+data.userName);
         callback(data);
     };
 
