@@ -1,4 +1,4 @@
-﻿define(["knockout", "store"], function (ko, store) {
+﻿﻿define(["knockout", "store"], function (ko, store) {
 
     var menuElements = [
         {

@@ -1,4 +1,4 @@
-﻿define([], function() {
+﻿﻿define([], function() {
     var getNames = async function(callback) {
         var response = await fetch("api/names");
         var data = await response.json();
@@ -10,7 +10,12 @@
         var data = await response.json();
         callback(data);
     };
-
+    
+    var login = async function(callback){
+        var response = await fetch("api/auth/tokens");
+        var data = await response.json();
+        callback(data)
+    }
 
     return {
         getNames,

@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29503.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Livecode11", "Livecode11\Livecode11.csproj", "{77A283DA-25DB-4FD6-AFC9-F1FFFF341E9F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{6C68C410-A9FA-4D9E-9FA9-B1D39B620F5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stackoverflow.tests", "Stackoverflow.tests\Stackoverflow.tests.csproj", "{DADD8C73-FE81-4B32-8958-B4B7B90AD2D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{77A283DA-25DB-4FD6-AFC9-F1FFFF341E9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77A283DA-25DB-4FD6-AFC9-F1FFFF341E9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77A283DA-25DB-4FD6-AFC9-F1FFFF341E9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C68C410-A9FA-4D9E-9FA9-B1D39B620F5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C68C410-A9FA-4D9E-9FA9-B1D39B620F5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C68C410-A9FA-4D9E-9FA9-B1D39B620F5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C68C410-A9FA-4D9E-9FA9-B1D39B620F5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DADD8C73-FE81-4B32-8958-B4B7B90AD2D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DADD8C73-FE81-4B32-8958-B4B7B90AD2D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DADD8C73-FE81-4B32-8958-B4B7B90AD2D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DADD8C73-FE81-4B32-8958-B4B7B90AD2D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,4 @@
-﻿define([], function () {
+﻿﻿define([], function () {
 
     const selectPerson = "SELECT_PERSON";
     const selectMenu = "SELECT_MENU";

@@ -1,4 +1,4 @@
-﻿define(['knockout', 'dataService', 'store'], function (ko, ds, store) {
+﻿﻿define(['knockout', 'dataService', 'store'], function (ko, ds, store) {
     var persons = ko.observableArray([]);
     
     var selectPerson = function (person) {
