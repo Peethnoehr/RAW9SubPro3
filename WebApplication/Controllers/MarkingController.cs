@@ -26,6 +26,11 @@ namespace WebServiceToken.Controllers
             _dataService = dataService;
         }
 
+        /*
+         * URI: POST api/mark/markings
+         * Accepts a User object input
+         * Returns all markings if there are any
+         */
         [HttpPost("markings")]
         public ActionResult GetMarkings([FromBody]User user)
         {
@@ -36,23 +41,36 @@ namespace WebServiceToken.Controllers
             return Ok(markings);
         }
         
+        /*
+         * URI: POST api/mark
+         * CREATE accepts a Marking object input
+         * Creates the given marking
+         */
         [HttpPost]
         public ActionResult<Marking> CreateMarking([FromBody] Marking marking)
         {
-            var categoryCreated = _dataService.CreateMarking(marking.Annotation, marking.Username,marking.PostId,marking.CommentId,DateTime.Now);;
+            var markingCreated = _dataService.CreateMarking(marking.Annotation, marking.Username,marking.PostId,marking.CommentId,DateTime.Now);;
 
-            return Created("Created Marking",categoryCreated);
+            return Created("Created Marking", markingCreated);
         }
 
-        
+        /*
+         * URI: PUT api/mark
+         * accepts a marking, updates the given marking.
+         * This usually means the annotation
+         */
         [HttpPut]
-        public ActionResult<Marking> UpdateCategory([FromBody] Marking marking)
+        public ActionResult<Marking> UpdateMarking([FromBody] Marking marking)
         {
             if (!_dataService.UpdateMarking(marking.Id, marking.Annotation))
                 return NotFound();
             return Ok(new Marking(){Id = marking.Id, Annotation = marking.Annotation});
         }
         
+        /*
+         * URI: DELETE api/mark/{markingid}
+         * Deletes the given marking if it exists
+         */
         [HttpDelete("{markingid}")]
         public ActionResult DeleteMarking(int markingid)
         {

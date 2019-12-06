@@ -29,6 +29,12 @@ namespace WebServiceToken.Controllers
             _configuration = configuration;
         }
 
+        /*
+         * URI: api/auth/users
+         * Accepts a UserForCreationDto with Username, Password, Email
+         * If Username or Password is null, then return error.
+         * Otherwise create the user, same as updating the user except it is a CREATE not an UPDATE.
+         */
         [HttpPost("users")]
         public ActionResult CreateUser([FromBody] UserForCreationDto dto)
         {
@@ -55,6 +61,13 @@ namespace WebServiceToken.Controllers
             return CreatedAtRoute(null, salt);
         }
 
+        /*
+         * URI: api/auth/tokens
+         * Takes a login request DTO with variables UserName and Password.
+         * If either is null, return error.
+         * Then it fetches the user's salt and hashes the password and compares this with the hashed password of the user.
+         * If all is OK it returns a token that expires after 10 minutes, as well as the username.
+         */
         [HttpPost("tokens")]
         public ActionResult Login([FromBody] UserForLoginDto dto)
         {
@@ -90,7 +103,7 @@ namespace WebServiceToken.Controllers
                 {
                     new Claim(ClaimTypes.Name, user.UserName),
                 }),
-                Expires = DateTime.Now.AddSeconds(20),
+                Expires = DateTime.Now.AddSeconds(600),
                 SigningCredentials = new SigningCredentials(
                     new SymmetricSecurityKey(key),
                     SecurityAlgorithms.HmacSha256Signature)
@@ -104,6 +117,12 @@ namespace WebServiceToken.Controllers
 
         }
         
+        /*
+         * URI: api/auth
+         * Takes a User dto with UserName, Password, Email
+         * If either UserName or Password is null then return error
+         * Otherwise hash the new password and update all the information.
+         */
         [HttpPut]
         public ActionResult UpdateUser([FromBody] User dto)
         {
@@ -131,6 +150,11 @@ namespace WebServiceToken.Controllers
             return Ok(salt);
         }
 
+        /*
+         * URI: api/auth/{username}
+         * If user not found, return error.
+         * Otherwise delete the user.
+         */
         [HttpDelete("{username}")]
         public ActionResult DeleteUser(string username)
         {

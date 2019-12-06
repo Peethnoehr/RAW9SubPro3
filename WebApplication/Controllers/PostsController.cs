@@ -18,15 +18,23 @@ namespace WebServiceToken.Controllers
             _dataService = dataService;
         }
 
+        /*
+         * URI: POST api/posts
+         * Accepts a Question object, though it can be empty.
+         * Then it gets one answer with the questions post-id
+         * Then it sets the questions post id to the answers' related questions' postid
+         * Then it gets all the information relevant to the question of that postid
+         * If there are none, returns notfound.
+         */
         [HttpPost]
         public ActionResult<Question> GetDetailQuestion([FromBody]Question post)
         {
-            var answer = _dataService.getAnswer(post.Id);
-
-            if (answer != null)
-            {
-                post.Id = answer.QuestionId;
-            }
+            var answer = _dataService.getAnswer(post.Id);     //
+                                                            //This part makes no sense to me
+            if (answer != null)                                //
+            {                                               //If we already have a questionId why would we need to go 
+                post.Id = answer.QuestionId;                //through the hoops of checking the answer of the question 
+            }                                               //for the id of the question???
             
             var question = _dataService.GetDetailQuestion(post.Id);
 
@@ -35,6 +43,11 @@ namespace WebServiceToken.Controllers
             return Ok(question);
         }
         
+        /*
+         * URI: POST api/posts/search
+         * Accepts a search text
+         * calls searchPosts method which should utilize the indexed searching and return the results.
+         */
         [HttpPost("search")]
         public ActionResult GetSearch([FromBody]TextForPost searchtext)
         {
@@ -42,7 +55,7 @@ namespace WebServiceToken.Controllers
             
             if (search == null) return NotFound();
 
-            return Ok();
+            return Ok(); //Does this actually return anything??
         }
     }
 }

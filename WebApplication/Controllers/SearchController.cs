@@ -26,6 +26,11 @@ namespace WebServiceToken.Controllers
             _dataService = dataService;
         }
         
+        /*
+         * URI: POST api/search
+         * Takes a user object input
+         * Returns the full search history of the user
+         */
         [HttpPost]
         public ActionResult GetSearch([FromBody]User user)
         {

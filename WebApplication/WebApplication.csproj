@@ -13,10 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot" />
-  </ItemGroup>
-
-  <ItemGroup>
     <_ContentIncludedByDefault Remove="wwwroot\lib\wwwroot\lib\jqcloud2\dist\jqcloud.css" />
     <_ContentIncludedByDefault Remove="wwwroot\lib\wwwroot\lib\jqcloud2\dist\jqcloud.js" />
     <_ContentIncludedByDefault Remove="wwwroot\lib\wwwroot\lib\jqcloud2\dist\jqcloud.min.css" />
