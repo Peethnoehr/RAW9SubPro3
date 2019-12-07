@@ -2,6 +2,10 @@
 
     var menuElements = [
         {
+            name: "Login",
+            component: "login"
+        },
+        {
             name: "Component 1",
             component: "component1"
         },

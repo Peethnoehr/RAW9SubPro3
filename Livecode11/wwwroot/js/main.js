@@ -16,6 +16,10 @@ require.config({
 });
 
 require(["knockout"], function(ko) {
+    ko.components.register('login', {
+        viewModel: { require: "components/login/login" },
+        template: { require: "text!components/login/login.html" }
+    });
     ko.components.register('cloud', {
         viewModel: { require: "components/wordcloud/cloud" },
         template: { require: "text!components/wordcloud/cloud.html" }

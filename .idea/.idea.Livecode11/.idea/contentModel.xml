@@ -8,8 +8,8 @@
     <e p="C:\Users\Marco\.nuget\packages\xunit.runner.visualstudio\2.4.0\build\netcoreapp1.0\xunit.runner.utility.netcoreapp10.dll" t="Include" />
     <e p="C:\Users\Marco\.nuget\packages\xunit.runner.visualstudio\2.4.0\build\netcoreapp1.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll" t="Include" />
     <e p="C:\Users\Marco\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Marco\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Livecode11.407012589.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Marco\source\repos\RAWDATA_2019_Livecode11 - Kopi" t="IncludeFlat">
+    <e p="C:\Users\Marco\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Livecode11.1321437547.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Marco\source\repos\RAW9SubPro3" t="IncludeFlat">
       <e p="DataAccessLayer" t="IncludeRecursive">
         <e p="Answer.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
@@ -88,6 +88,10 @@
               <e p="component2" t="Include">
                 <e p="component2.html" t="Include" />
                 <e p="component2.js" t="Include" />
+              </e>
+              <e p="login" t="Include">
+                <e p="login.html" t="Include" />
+                <e p="login.js" t="Include" />
               </e>
               <e p="parent" t="Include">
                 <e p="parent.html" t="Include" />
