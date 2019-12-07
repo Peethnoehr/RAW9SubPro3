@@ -11,6 +11,28 @@
         callback(data);
     };
 
+    var getMarkings = async function(callback, username) {
+        alert("loading markings for: "+username);
+        var credentials = {UserName:inputusername, Password:inputpassword};
+        var response = await fetch("api/mark/markings",{
+            method: 'POST', // *GET, POST, PUT, DELETE, etc.
+            mode: 'cors', // no-cors, *cors, same-origin
+            cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+            credentials: 'same-origin', // include, *same-origin, omit
+            headers: {
+                'Content-Type': 'application/json'
+                // 'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            redirect: 'follow', // manual, *follow, error
+            referrer: 'no-referrer', // no-referrer, *client
+            body: JSON.stringify(username) // body data type must match "Content-Type" header
+        });
+        alert("After fetch");
+        var data = await response.json();
+        alert("Stringified output: "+JSON.stringify(data));
+        callback(data);
+    };
+    
     var login = async function(callback, inputusername, inputpassword) {
         alert("username input: "+inputusername);
         alert("password input: "+inputpassword);
