@@ -2,20 +2,8 @@
 
     var menuElements = [
         {
-            name: "Login",
-            component: "login"
-        },
-        {
-            name: "Markings",
-            component: "marking"
-        },
-        {
-            name: "Search",
-            component: "search"
-        },
-        {
             name: "Component 1",
-            component: "component2"
+            component: "component1"
         },
         {
             name: "Component 2",
