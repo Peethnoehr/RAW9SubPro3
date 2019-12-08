@@ -73,9 +73,9 @@
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/login/login.js" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/navbarApp.js" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/main.js" />
+        <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/profile/profile.js" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/services/dataService.js" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/profile/profile.html" />
-        <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/profile/profile.js" />
       </list>
     </option>
   </component>
