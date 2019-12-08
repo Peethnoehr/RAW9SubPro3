@@ -106,6 +106,10 @@
                 <e p="post.html" t="Include" />
                 <e p="post.js" t="Include" />
               </e>
+              <e p="profile" t="Include">
+                <e p="profile.html" t="Include" />
+                <e p="profile.js" t="Include" />
+              </e>
               <e p="search" t="Include">
                 <e p="search.html" t="Include" />
                 <e p="search.js" t="Include" />

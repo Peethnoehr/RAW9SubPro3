@@ -24,6 +24,10 @@
         {
             name: "Search History",
             component: "searchhistory"
+        },
+        {
+            name: "Profile",
+            component: "profile"
         }
     ];
 

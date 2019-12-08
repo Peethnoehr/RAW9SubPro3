@@ -32,6 +32,10 @@ require(["knockout"], function(ko) {
         viewModel: { require: "components/searchhistory/searchhistory" },
         template: { require: "text!components/searchhistory/searchhistory.html" }
     });
+    ko.components.register('profile', {
+        viewModel: { require: "components/profile/profile" },
+        template: { require: "text!components/profile/profile.html" }
+    });
     ko.components.register('marking', {
         viewModel: { require: "components/marking/marking" },
         template: { require: "text!components/marking/marking.html" }

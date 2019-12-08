@@ -113,6 +113,33 @@
         alert("Returned search: "+data);
         callback(data)
     };
+
+    var login = async function(callback, inputusername, inputpassword) {
+        alert("username input: "+inputusername);
+        alert("password input: "+inputpassword);
+        alert("password input: "+inputemail);
+        var profile = {UserName:inputusername, Password:inputpassword, Email:inputemail};
+        var response = await fetch("api/auth",{
+            method: 'PUT', // *GET, POST, PUT, DELETE, etc.
+            mode: 'cors', // no-cors, *cors, same-origin
+            cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+            credentials: 'same-origin', // include, *same-origin, omit
+            headers: {
+                'Content-Type': 'application/json'
+                // 'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            redirect: 'follow', // manual, *follow, error
+            referrer: 'no-referrer', // no-referrer, *client
+            body: JSON.stringify(profile) // body data type must match "Content-Type" header
+        });
+        alert("After fetch");
+        var data = await response.json();
+        alert("Stringified credentials: "+JSON.stringify(profile));
+        alert("Stringified hardcoded input: "+JSON.stringify({"UserName":"Test","Password":"TestPW", "Email":"test@test.test"}));
+        alert("Stringified output: "+JSON.stringify(data));
+        alert("returned username: "+data.userName);
+        callback(data);
+    };
     
     return {
         getNames,
@@ -120,6 +147,7 @@
         login,
         detailPost,
         searchPost,
-        searchHistory
+        searchHistory,
+        changeProfile
     };
 });
