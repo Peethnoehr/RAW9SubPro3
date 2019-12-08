@@ -8,7 +8,14 @@
         var weight = ko.observable();
         var inputusername = ko.observable();
         var inputpassword = ko.observable();
+        var inputid = ko.observable();
+        var inputsearch = ko.observable();
+        var inputsearchhid = ko.observable();
+        var postsarray = ko.observable([]);
         var username = ko.observable("test");
+        var detailedPost = ko.observable();
+        var searchedPost = ko.observable();
+      
         var login = function() {
             ds.login(data => {
             username(data.userName);
@@ -30,7 +37,7 @@
                     height: height
                 });
         });
-
+        
         return {
             word,
             weight,
@@ -38,7 +45,7 @@
             username,
             inputusername,
             inputpassword,
-            login
+            login,
         };
     };
 });

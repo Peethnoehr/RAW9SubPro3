@@ -20,6 +20,18 @@ require(["knockout"], function(ko) {
         viewModel: { require: "components/login/login" },
         template: { require: "text!components/login/login.html" }
     });
+    ko.components.register('post', {
+        viewModel: { require: "components/post/post" },
+        template: { require: "text!components/post/post.html" }
+    });
+    ko.components.register('search', {
+        viewModel: { require: "components/search/search" },
+        template: { require: "text!components/search/search.html" }
+    });
+    ko.components.register('searchhistory', {
+        viewModel: { require: "components/searchhistory/searchhistory" },
+        template: { require: "text!components/searchhistory/searchhistory.html" }
+    });
     ko.components.register('marking', {
         viewModel: { require: "components/marking/marking" },
         template: { require: "text!components/marking/marking.html" }

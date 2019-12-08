@@ -52,10 +52,11 @@ namespace WebServiceToken.Controllers
         public ActionResult GetSearch([FromBody]TextForPost searchtext)
         {
             var search = _dataService.searchPosts(searchtext.SearchText);
-            
+            // var user = 
+            // var addsearchhistory = _dataService.CreateSearchHistory(searchtext,user);
             if (search == null) return NotFound();
 
-            return Ok(); //Does this actually return anything??
+            return Ok(search); //Does this actually return anything??
         }
     }
 }

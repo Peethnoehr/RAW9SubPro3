@@ -12,6 +12,18 @@
         {
             name: "Component 2",
             component: "component2"
+        },
+        {
+            name: "Post",
+            component: "post"
+        },
+        {
+            name: "Search",
+            component: "search"
+        },
+        {
+            name: "Search History",
+            component: "searchhistory"
         }
     ];
 

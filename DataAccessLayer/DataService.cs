@@ -213,7 +213,7 @@ namespace DataAccessLayer
                 where searchhistory.UserName == username
                 select new SearchHistory(){Id = searchhistory.Id, Text = searchhistory.Text, Date = searchhistory.Date, UserName = searchhistory.UserName};
             
-            return db.SearchHistories.ToList();
+            return query.ToList();
         }
         
         public SearchHistory CreateSearchHistory(string text, string username, DateTime date)
@@ -365,8 +365,8 @@ namespace DataAccessLayer
             var function = db.Posts
                 .FromSqlRaw("SELECT * FROM exactMatchQuery(\'"+searchtext+"\')")
                 .Select(post => new Post(){Id = post.Id, Body = post.Body, Title = post.Title})
-                .ToList(); 
-
+                .ToList();
+            
             var posts = function.ToList();
 
             return posts;

@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Marco\.nuget\packages\microsoft.net.test.sdk\16.2.0\build\netcoreapp1.0" t="Include">
+    <e p="C:\Users\peter\.nuget\packages\microsoft.net.test.sdk\16.2.0\build\netcoreapp1.0" t="Include">
       <e p="Microsoft.NET.Test.Sdk.Program.cs" t="Include" />
     </e>
-    <e p="C:\Users\Marco\.nuget\packages\xunit.runner.visualstudio\2.4.0\build\netcoreapp1.0\xunit.runner.reporters.netcoreapp10.dll" t="Include" />
-    <e p="C:\Users\Marco\.nuget\packages\xunit.runner.visualstudio\2.4.0\build\netcoreapp1.0\xunit.runner.utility.netcoreapp10.dll" t="Include" />
-    <e p="C:\Users\Marco\.nuget\packages\xunit.runner.visualstudio\2.4.0\build\netcoreapp1.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll" t="Include" />
-    <e p="C:\Users\Marco\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Marco\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Livecode11.1321437547.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Marco\source\repos\RAW9SubPro3" t="IncludeFlat">
+    <e p="C:\Users\peter\.nuget\packages\xunit.runner.visualstudio\2.4.0\build\netcoreapp1.0\xunit.runner.reporters.netcoreapp10.dll" t="Include" />
+    <e p="C:\Users\peter\.nuget\packages\xunit.runner.visualstudio\2.4.0\build\netcoreapp1.0\xunit.runner.utility.netcoreapp10.dll" t="Include" />
+    <e p="C:\Users\peter\.nuget\packages\xunit.runner.visualstudio\2.4.0\build\netcoreapp1.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll" t="Include" />
+    <e p="C:\Users\peter\.Rider2019.2\config\scratches" t="IncludeRecursive" />
+    <e p="C:\Users\peter\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\peter\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Livecode11.-982248314.00" t="ExcludeRecursive" />
+    <e p="C:\Users\peter\Documents\GitHub\RAW9SubPro3" t="IncludeFlat">
       <e p="DataAccessLayer" t="IncludeRecursive">
         <e p="Answer.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
@@ -93,9 +94,25 @@
                 <e p="login.html" t="Include" />
                 <e p="login.js" t="Include" />
               </e>
+              <e p="marking" t="Include">
+                <e p="marking.html" t="Include" />
+                <e p="marking.js" t="Include" />
+              </e>
               <e p="parent" t="Include">
                 <e p="parent.html" t="Include" />
                 <e p="parent.js" t="Include" />
+              </e>
+              <e p="post" t="Include">
+                <e p="post.html" t="Include" />
+                <e p="post.js" t="Include" />
+              </e>
+              <e p="search" t="Include">
+                <e p="search.html" t="Include" />
+                <e p="search.js" t="Include" />
+              </e>
+              <e p="searchhistory" t="Include">
+                <e p="searchhistory.html" t="Include" />
+                <e p="searchhistory.js" t="Include" />
               </e>
               <e p="wordcloud" t="Include">
                 <e p="cloud.html" t="Include" />
