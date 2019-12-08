@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a431006-e726-4e5c-b258-b44f63730df7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Livecode11/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Livecode11/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Livecode11/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Livecode11/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Livecode11/wwwroot/js/components/profile/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/Livecode11/wwwroot/js/components/profile/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Livecode11/wwwroot/js/components/profile/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/Livecode11/wwwroot/js/components/profile/profile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Livecode11/wwwroot/js/services/dataService.js" beforeDir="false" afterPath="$PROJECT_DIR$/Livecode11/wwwroot/js/services/dataService.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,8 +63,6 @@
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/search/search.html" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/wordcloud/cloud.html" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/searchhistory/searchhistory.html" />
-        <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/main.js" />
-        <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/navbarApp.js" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/post/post.js" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/search/search.js" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/searchhistory/searchhistory.js" />
@@ -72,9 +71,11 @@
         <option value="$PROJECT_DIR$/DataAccessLayer/DataService.cs" />
         <option value="$PROJECT_DIR$/Livecode11/Controllers/PostsController.cs" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/login/login.js" />
-        <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/profile/profile.js" />
+        <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/navbarApp.js" />
+        <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/main.js" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/services/dataService.js" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/profile/profile.html" />
+        <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/profile/profile.js" />
       </list>
     </option>
   </component>
@@ -150,6 +151,14 @@
       <workItem from="1575653318904" duration="1602000" />
       <workItem from="1575727380571" duration="339000" />
     </task>
+    <task id="LOCAL-00001" summary="Profile Test">
+      <created>1575834601954</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575834601954</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +181,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+    <MESSAGE value="Profile Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Profile Test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

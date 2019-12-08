@@ -114,7 +114,7 @@
         callback(data)
     };
 
-    var login = async function(callback, inputusername, inputpassword) {
+    var changeProfile = async function(callback, inputusername, inputpassword, inputemail) {
         alert("username input: "+inputusername);
         alert("password input: "+inputpassword);
         alert("password input: "+inputemail);
