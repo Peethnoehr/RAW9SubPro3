@@ -6,10 +6,14 @@
         <button data-bind="click: searchPost">Search</button>
     </div>
 </div>
-﻿<ul>
+<ul data-bind="foreach: searchedPosts">
     <li>
-        <span data-bind="text: parsed.body"></span>
+        <div>Title: <span data-bind="text: title"></span></div>
+        <div>Body: <span data-bind="text: body"></span></div>
+        <div>Score: <span data-bind="text: score"></span></div>
     </li>
+</ul>
+﻿<ul>
     <li>
         <span data-bind="text: searchedPost"></span>
     </li>
