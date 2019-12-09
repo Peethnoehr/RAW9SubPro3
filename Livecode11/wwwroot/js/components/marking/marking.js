@@ -1,18 +1,23 @@
 ﻿﻿define(['knockout', 'dataService', 'store'], function (ko, ds, store) {
-    return function (params) {
-    var markings = ko.observableArray([]);
     
-    var selectPerson = function (person) {
-        store.dispatch(store.actions.selectPerson(person));
-        store.dispatch(store.actions.selectMenu("Component 2"));
-        //postman.publish("selectperson", person);
+    var markings = ko.observableArray([]);
+    var username = ko.observable("Test");
+
+    var alertMarkings = function(){
+        alert(markings().length);
+        markings().forEach(function(marking) {
+            alert(marking.id);
+        });
     };
-
-    ds.getNames(persons);
-
+    
+    return function (params) {
+        ds.getMarkings(markings, username);
+        
     
         return {
-            markings
+            markings,
+            username,
+            alertMarkings
         };
     };
 });

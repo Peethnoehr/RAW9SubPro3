@@ -28,6 +28,10 @@
         {
             name: "Profile",
             component: "profile"
+        },
+        {
+            name: "Markings",
+            component: "marking"
         }
     ];
 

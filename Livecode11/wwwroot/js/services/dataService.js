@@ -38,6 +38,29 @@
         callback(data);
     };
 
+    var getMarkings = async function(callback, username) {
+        alert("username input: "+username());
+        var user = {UserName:username()};
+        var response = await fetch("api/mark/markings",{
+            method: 'POST', // *GET, POST, PUT, DELETE, etc.
+            mode: 'cors', // no-cors, *cors, same-origin
+            cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+            credentials: 'same-origin', // include, *same-origin, omit
+            headers: {
+                'Content-Type': 'application/json'
+                // 'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            redirect: 'follow', // manual, *follow, error
+            referrer: 'no-referrer', // no-referrer, *client
+            body: JSON.stringify(user) // body data type must match "Content-Type" header
+        });
+        alert("After fetch");
+        var data = await response.json();
+        alert("Stringified input: "+JSON.stringify(user));
+        alert("Stringified output: "+JSON.stringify(data));
+        callback(data);
+    };
+    
     var detailPost = async function(callback, inputid) {
         var post = parseInt(inputid,10);
         alert("id input: "+post);
@@ -167,6 +190,7 @@
     };
     
     return {
+        getMarkings,
         getNames,
         getWords,
         login,
