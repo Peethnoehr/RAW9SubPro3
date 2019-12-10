@@ -1,16 +1,15 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\peter\\Documents\\GitHub\\RAW9SubPro3\\DataAccessLayer\\DataAccessLayer.csproj",
+    "projectUniqueName": "C:\\Users\\Marco\\source\\repos\\RAW9SubPro3\\DataAccessLayer\\DataAccessLayer.csproj",
     "projectName": "DataAccessLayer",
-    "projectPath": "C:\\Users\\peter\\Documents\\GitHub\\RAW9SubPro3\\DataAccessLayer\\DataAccessLayer.csproj",
-    "outputPath": "C:\\Users\\peter\\Documents\\GitHub\\RAW9SubPro3\\DataAccessLayer\\obj\\",
+    "projectPath": "C:\\Users\\Marco\\source\\repos\\RAW9SubPro3\\DataAccessLayer\\DataAccessLayer.csproj",
+    "outputPath": "C:\\Users\\Marco\\source\\repos\\RAW9SubPro3\\DataAccessLayer\\obj\\",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp3.0"
     ],
     "sources": {
-      "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
       "https://api.nuget.org/v3/index.json": {}
     },
     "frameworks": {
