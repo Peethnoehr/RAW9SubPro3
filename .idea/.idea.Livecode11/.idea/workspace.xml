@@ -70,15 +70,12 @@
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/post/post.html" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/wordcloud/cloud.html" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/searchhistory/searchhistory.html" />
-        <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/post/post.js" />
-        <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/searchhistory/searchhistory.js" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/wordcloud/cloud.js" />
         <option value="$PROJECT_DIR$/Livecode11/Controllers/SearchController.cs" />
         <option value="$PROJECT_DIR$/Livecode11/Controllers/PostsController.cs" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/main.js" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/login/login.html" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/marking/marking.html" />
-        <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/search/search.js" />
         <option value="$PROJECT_DIR$/DataAccessLayer/DataService.cs" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/profile/profile.html" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/profile/profile.js" />
@@ -89,6 +86,9 @@
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/navbarApp.js" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/login/login.js" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/marking/marking.js" />
+        <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/post/post.js" />
+        <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/search/search.js" />
+        <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/searchhistory/searchhistory.js" />
       </list>
     </option>
   </component>
@@ -165,7 +165,7 @@
       <workItem from="1575727380571" duration="339000" />
       <workItem from="1575897633704" duration="7524000" />
       <workItem from="1575910264638" duration="10742000" />
-      <workItem from="1575974788080" duration="2769000" />
+      <workItem from="1575974788080" duration="3020000" />
     </task>
     <task id="LOCAL-00001" summary="Profile Test">
       <created>1575834601954</created>
