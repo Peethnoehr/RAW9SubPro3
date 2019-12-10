@@ -2,41 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a431006-e726-4e5c-b258-b44f63730df7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Livecode11/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Livecode11/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Livecode11/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Livecode11/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataAccessLayer/DataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccessLayer/DataService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataAccessLayer/bin/Debug/netcoreapp3.0/DataAccessLayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccessLayer/bin/Debug/netcoreapp3.0/DataAccessLayer.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataAccessLayer/bin/Debug/netcoreapp3.0/DataAccessLayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccessLayer/bin/Debug/netcoreapp3.0/DataAccessLayer.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataAccessLayer/obj/DataAccessLayer.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccessLayer/obj/DataAccessLayer.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataAccessLayer/obj/DataAccessLayer.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccessLayer/obj/DataAccessLayer.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataAccessLayer/obj/DataAccessLayer.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccessLayer/obj/DataAccessLayer.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataAccessLayer/obj/Debug/netcoreapp3.0/DataAccessLayer.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccessLayer/obj/Debug/netcoreapp3.0/DataAccessLayer.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataAccessLayer/obj/Debug/netcoreapp3.0/DataAccessLayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccessLayer/obj/Debug/netcoreapp3.0/DataAccessLayer.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataAccessLayer/obj/Debug/netcoreapp3.0/DataAccessLayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccessLayer/obj/Debug/netcoreapp3.0/DataAccessLayer.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataAccessLayer/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccessLayer/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataAccessLayer/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccessLayer/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Livecode11/bin/Debug/netcoreapp3.0/DataAccessLayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Livecode11/bin/Debug/netcoreapp3.0/DataAccessLayer.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Livecode11/bin/Debug/netcoreapp3.0/DataAccessLayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Livecode11/bin/Debug/netcoreapp3.0/DataAccessLayer.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Livecode11/bin/Debug/netcoreapp3.0/Livecode11.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Livecode11/bin/Debug/netcoreapp3.0/Livecode11.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Livecode11/bin/Debug/netcoreapp3.0/Livecode11.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Livecode11/bin/Debug/netcoreapp3.0/Livecode11.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Livecode11/bin/Debug/netcoreapp3.0/Livecode11.runtimeconfig.dev.json" beforeDir="false" afterPath="$PROJECT_DIR$/Livecode11/bin/Debug/netcoreapp3.0/Livecode11.runtimeconfig.dev.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Livecode11/obj/Debug/netcoreapp3.0/Livecode11.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Livecode11/obj/Debug/netcoreapp3.0/Livecode11.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Livecode11/obj/Debug/netcoreapp3.0/Livecode11.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Livecode11/obj/Debug/netcoreapp3.0/Livecode11.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Livecode11/obj/Debug/netcoreapp3.0/Livecode11.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Livecode11/obj/Debug/netcoreapp3.0/Livecode11.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Livecode11/obj/Debug/netcoreapp3.0/Livecode11.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Livecode11/obj/Debug/netcoreapp3.0/Livecode11.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Livecode11/obj/Livecode11.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Livecode11/obj/Livecode11.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Livecode11/obj/Livecode11.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Livecode11/obj/Livecode11.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Livecode11/obj/Livecode11.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Livecode11/obj/Livecode11.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Livecode11/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Livecode11/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Livecode11/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Livecode11/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Livecode11/wwwroot/js/components/profile/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/Livecode11/wwwroot/js/components/profile/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Livecode11/wwwroot/js/components/profile/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/Livecode11/wwwroot/js/components/profile/profile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Livecode11/wwwroot/js/components/search/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/Livecode11/wwwroot/js/components/search/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Livecode11/wwwroot/js/components/search/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/Livecode11/wwwroot/js/components/search/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stackoverflow.tests/obj/Debug/netcoreapp3.0/Stackoverflow.tests.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Stackoverflow.tests/obj/Debug/netcoreapp3.0/Stackoverflow.tests.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stackoverflow.tests/obj/Debug/netcoreapp3.0/Stackoverflow.tests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Stackoverflow.tests/obj/Debug/netcoreapp3.0/Stackoverflow.tests.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stackoverflow.tests/obj/Stackoverflow.tests.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Stackoverflow.tests/obj/Stackoverflow.tests.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stackoverflow.tests/obj/Stackoverflow.tests.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Stackoverflow.tests/obj/Stackoverflow.tests.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stackoverflow.tests/obj/Stackoverflow.tests.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Stackoverflow.tests/obj/Stackoverflow.tests.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stackoverflow.tests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Stackoverflow.tests/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stackoverflow.tests/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Stackoverflow.tests/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Livecode11/wwwroot/js/services/dataService.js" beforeDir="false" afterPath="$PROJECT_DIR$/Livecode11/wwwroot/js/services/dataService.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,19 +74,20 @@
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/searchhistory/searchhistory.js" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/wordcloud/cloud.js" />
         <option value="$PROJECT_DIR$/Livecode11/Controllers/SearchController.cs" />
-        <option value="$PROJECT_DIR$/DataAccessLayer/DataService.cs" />
         <option value="$PROJECT_DIR$/Livecode11/Controllers/PostsController.cs" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/login/login.js" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/main.js" />
-        <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/profile/profile.js" />
-        <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/profile/profile.html" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/navbarApp.js" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/login/login.html" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/marking/marking.html" />
-        <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/services/dataService.js" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/marking/marking.js" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/search/search.js" />
+        <option value="$PROJECT_DIR$/DataAccessLayer/DataService.cs" />
+        <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/profile/profile.html" />
+        <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/profile/profile.js" />
+        <option value="$PROJECT_DIR$/Livecode11/Controllers/AuthController.cs" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/search/search.html" />
+        <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/services/dataService.js" />
       </list>
     </option>
   </component>
@@ -184,7 +163,7 @@
       <workItem from="1575653318904" duration="1602000" />
       <workItem from="1575727380571" duration="339000" />
       <workItem from="1575897633704" duration="7524000" />
-      <workItem from="1575910264638" duration="5146000" />
+      <workItem from="1575910264638" duration="10742000" />
     </task>
     <task id="LOCAL-00001" summary="Profile Test">
       <created>1575834601954</created>
@@ -226,6 +205,12 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="javascript">
+          <url>file://$PROJECT_DIR$/Livecode11/wwwroot/js/components/component1/component1.js</url>
+          <line>12</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

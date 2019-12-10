@@ -364,7 +364,7 @@ namespace DataAccessLayer
             var search = "java";
             var function = db.Posts
                 .FromSqlRaw("SELECT * FROM exactMatchQuery(\'"+searchtext+"\')")
-                .Select(post => new Post(){Id = post.Id, Body = post.Body, Title = post.Title})
+                .Select(post => new Post(){Id = post.Id, Body = post.Body, Title = post.Title, Score = post.Score})
                 .ToList();
             
             var posts = function.ToList();
