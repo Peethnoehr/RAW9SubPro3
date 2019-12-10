@@ -164,10 +164,10 @@
         callback(data);
     };
 
-    var deleteProfile = async function(callback, inputusername) {
-        alert("username input: "+inputusername);
-        var profile = {UserName:inputusername};
-        var response = await fetch("api/auth/",{
+    var deleteProfile = async function(callback, inputusername2) { //DOES NOT WORK...
+        alert("username input: "+inputusername2);
+        var profile = {UserName:inputusername2};
+        var response = await fetch("api/auth/"+inputusername2,{
             method: 'DELETE', // *GET, POST, PUT, DELETE, etc.
             mode: 'cors', // no-cors, *cors, same-origin
             cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached

@@ -3,17 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5a431006-e726-4e5c-b258-b44f63730df7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Livecode11/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Livecode11/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataAccessLayer/DataService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccessLayer/DataService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataAccessLayer/bin/Debug/netcoreapp3.0/DataAccessLayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccessLayer/bin/Debug/netcoreapp3.0/DataAccessLayer.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataAccessLayer/bin/Debug/netcoreapp3.0/DataAccessLayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccessLayer/bin/Debug/netcoreapp3.0/DataAccessLayer.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataAccessLayer/obj/Debug/netcoreapp3.0/DataAccessLayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccessLayer/obj/Debug/netcoreapp3.0/DataAccessLayer.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataAccessLayer/obj/Debug/netcoreapp3.0/DataAccessLayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccessLayer/obj/Debug/netcoreapp3.0/DataAccessLayer.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Livecode11/bin/Debug/netcoreapp3.0/DataAccessLayer.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Livecode11/bin/Debug/netcoreapp3.0/DataAccessLayer.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Livecode11/bin/Debug/netcoreapp3.0/DataAccessLayer.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Livecode11/bin/Debug/netcoreapp3.0/DataAccessLayer.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Livecode11/obj/Debug/netcoreapp3.0/Livecode11.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Livecode11/obj/Debug/netcoreapp3.0/Livecode11.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Livecode11/wwwroot/js/components/profile/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/Livecode11/wwwroot/js/components/profile/profile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Livecode11/wwwroot/js/components/profile/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/Livecode11/wwwroot/js/components/profile/profile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Livecode11/wwwroot/js/components/search/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/Livecode11/wwwroot/js/components/search/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Livecode11/wwwroot/js/components/search/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/Livecode11/wwwroot/js/components/search/search.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Livecode11/wwwroot/js/services/dataService.js" beforeDir="false" afterPath="$PROJECT_DIR$/Livecode11/wwwroot/js/services/dataService.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,13 +73,13 @@
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/login/login.html" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/marking/marking.html" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/marking/marking.js" />
-        <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/search/search.js" />
         <option value="$PROJECT_DIR$/DataAccessLayer/DataService.cs" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/profile/profile.html" />
-        <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/profile/profile.js" />
         <option value="$PROJECT_DIR$/Livecode11/Controllers/AuthController.cs" />
-        <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/search/search.html" />
+        <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/profile/profile.js" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/services/dataService.js" />
+        <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/search/search.js" />
+        <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/search/search.html" />
       </list>
     </option>
   </component>
@@ -163,7 +155,7 @@
       <workItem from="1575653318904" duration="1602000" />
       <workItem from="1575727380571" duration="339000" />
       <workItem from="1575897633704" duration="7524000" />
-      <workItem from="1575910264638" duration="10742000" />
+      <workItem from="1575910264638" duration="22466000" />
     </task>
     <task id="LOCAL-00001" summary="Profile Test">
       <created>1575834601954</created>

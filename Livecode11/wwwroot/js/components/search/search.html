@@ -1,4 +1,19 @@
-﻿<div>
+﻿
+<div>
+    <ul>
+        <li class="label" data-bind="foreach: paginated">
+            <input type="text" data-bind="value: title"/>
+            <input type="html" data-bind="value: body"/>
+            <input type="text" data-bind="value: score"/>
+        </li>
+    </ul>
+    <div class="pager">
+        <a href="#" class="previous" data-bind="click: previous, visible: hasPrevious">&lt;</a>
+        <span class="current" data-bind="text: pageNumber"></span>
+        <a href="#" class="next" data-bind="click: next, visible: hasNext">&gt;</a>
+    </div>
+</div>
+<div>
     <div>
         Searchtext: <input data-bind="value: inputsearch"/>
     </div>
