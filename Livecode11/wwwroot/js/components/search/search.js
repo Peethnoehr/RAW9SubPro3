@@ -3,6 +3,7 @@
     var postdata = ko.observable();
     var parsed = ko.observable();
     var inputsearch = ko.observable();
+    var username;
 
     var searchPost = function(){
         alert("TestCall");
@@ -13,6 +14,7 @@
         },inputsearch());
     };
     return function (params) {
+        username = params.userName;
         return {
             inputsearch,
             searchedPosts,

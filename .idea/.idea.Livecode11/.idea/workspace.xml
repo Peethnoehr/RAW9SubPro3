@@ -78,7 +78,6 @@
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/main.js" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/login/login.html" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/marking/marking.html" />
-        <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/marking/marking.js" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/search/search.js" />
         <option value="$PROJECT_DIR$/DataAccessLayer/DataService.cs" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/profile/profile.html" />
@@ -87,8 +86,9 @@
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/search/search.html" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/services/dataService.js" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/index.html" />
-        <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/login/login.js" />
         <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/navbarApp.js" />
+        <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/login/login.js" />
+        <option value="$PROJECT_DIR$/Livecode11/wwwroot/js/components/marking/marking.js" />
       </list>
     </option>
   </component>
@@ -165,7 +165,7 @@
       <workItem from="1575727380571" duration="339000" />
       <workItem from="1575897633704" duration="7524000" />
       <workItem from="1575910264638" duration="10742000" />
-      <workItem from="1575974788080" duration="2264000" />
+      <workItem from="1575974788080" duration="2769000" />
     </task>
     <task id="LOCAL-00001" summary="Profile Test">
       <created>1575834601954</created>
