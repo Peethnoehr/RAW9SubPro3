@@ -38,6 +38,31 @@
         callback(data);
     };
 
+    var markPost = async function(callback, username, postid, annotation) {
+        alert("username: "+username());
+        alert("id: "+postid());
+        alert("annotation: "+annotation());
+        var marking = {UserName:username(), PostId:postid, Annotation:annotation};
+        var response = await fetch("api/mark",{
+            method: 'POST', // *GET, POST, PUT, DELETE, etc.
+            mode: 'cors', // no-cors, *cors, same-origin
+            cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+            credentials: 'same-origin', // include, *same-origin, omit
+            headers: {
+                'Content-Type': 'application/json'
+                // 'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            redirect: 'follow', // manual, *follow, error
+            referrer: 'no-referrer', // no-referrer, *client
+            body: JSON.stringify(marking) // body data type must match "Content-Type" header
+        });
+        alert("After fetch");
+        var data = await response.json();
+        alert("Stringified input: "+JSON.stringify(marking));
+        alert("Stringified output: "+JSON.stringify(data));
+        callback(data);
+    };
+    
     var getMarkings = async function(callback, username) {
         alert("username input: "+username());
         var user = {UserName:username()};
@@ -166,7 +191,6 @@
 
     var deleteProfile = async function(callback, inputusername2) { //DOES NOT WORK...
         alert("username input: "+inputusername2);
-        var profile = {UserName:inputusername2};
         var response = await fetch("api/auth/"+inputusername2,{
             method: 'DELETE', // *GET, POST, PUT, DELETE, etc.
             mode: 'cors', // no-cors, *cors, same-origin
@@ -178,14 +202,10 @@
             },
             redirect: 'follow', // manual, *follow, error
             referrer: 'no-referrer', // no-referrer, *client
-            body: JSON.stringify(profile) // body data type must match "Content-Type" header
         });
         alert("After fetch");
         var data = await response.json();
-        alert("Stringified credentials: "+JSON.stringify(profile));
-        alert("Stringified hardcoded input: "+JSON.stringify({"UserName":"Test","Password":"TestPW", "Email":"test@test.test"}));
         alert("Stringified output: "+JSON.stringify(data));
-        alert("returned username: "+data.userName);
         callback(data);
     };
     
@@ -198,6 +218,7 @@
         searchPost,
         searchHistory,
         changeProfile,
-        deleteProfile
+        deleteProfile,
+        markPost
     };
 });

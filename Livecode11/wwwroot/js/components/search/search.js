@@ -3,6 +3,8 @@
     var postdata = ko.observable();
     var parsed = ko.observable();
     var inputsearch = ko.observable();
+    var markedPosts = ko.observableArray();
+    var username;
     var pageNumber = ko.observable(0);
     var nbPerPage = 25;
     var totalPages = ko.computed(function() {
@@ -44,7 +46,38 @@
             parsed(JSON.parse(data));
         },inputsearch());
     };
+
+    var getMarkings = function(){
+        ds.getMarkings( data => {
+            markedPosts(data);
+    }, username());
+    };
+    
+    /*var checkPosts = function(searchedPosts, markedPosts){
+        searchedPosts.forEach(function (searchedPosts) {
+                if (searchedPosts.id === markedPosts.postid) {
+                    entry.markCheck(true)
+                }
+        })
+    };*/
+
+    var checkPosts = function(searchedPosts, markedPosts){
+        searchedPosts.forEach(function (searchedPosts) {
+            if (searchedPosts.id === markedPosts.postid) {
+                searchedPosts.markCheck = true;
+            } 
+        })
+    };
+    
+    var markPost = function(){
+        ds.markPost( data => {
+            markedPost(data);
+            var annotation = prompt("Please enter an annotation:", "Text");
+        }, username(), postid(), annotation()); //Needs postid?
+    };
+    
     return function (params) {
+        username = params.userName;
         return {
             inputsearch,
             searchedPosts,
@@ -59,6 +92,12 @@
             next,
             previous,
             searchPost,
+            markPost,
+            markedPosts,
+            getMarkings,
+            postid,
+            annotation,
+            checkPosts
         };
     };
 });

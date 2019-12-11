@@ -6,3 +6,14 @@
         <button data-bind="click: detailPost">Find</button>
     </div>
 </div>
+<div>
+    <div data-bind="using: detailedPost">
+        <div>Id: <span data-bind="text: id"></span></div>
+        <div>Title: <span data-bind="text: title"></span></div>
+        <div>Body: <span data-bind="html: body"></span></div>
+        <div>Creation date: <span data-bind="text: creationDate"></span></div>
+        <div>Score: <span data-bind="text: score"></span></div>
+        <div>Closed date: <span data-bind="text: closedDate"></span></div>
+        <div>Accepted answer: <span data-bind="text: acceptAnswer"></span></div>
+    </div>
+</div>

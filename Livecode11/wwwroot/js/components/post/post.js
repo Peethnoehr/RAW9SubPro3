@@ -1,6 +1,7 @@
 ﻿﻿define(["jquery", "knockout", "dataService", "jqcloud"], function($, ko, ds) {
    
     var inputid = ko.observable();
+    var detailedPost = ko.observable();
     var username;
     var detailPost = function() {
         alert("TESTCall");
@@ -12,6 +13,7 @@
         username = params.userName;
         return {
             inputid,
+            detailedPost,
             detailPost
         };
     };

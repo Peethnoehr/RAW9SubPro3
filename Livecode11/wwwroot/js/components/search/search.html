@@ -1,7 +1,7 @@
 ﻿
 <div>
-    <ul>
-        <li class="label" data-bind="foreach: paginated">
+    <ul class="label" data-bind="foreach: paginated">
+        <li>
             <input type="text" data-bind="value: title"/>
             <input type="html" data-bind="value: body"/>
             <input type="text" data-bind="value: score"/>
@@ -27,6 +27,8 @@
         <div>Title: <span data-bind="text: title"></span></div>
         <div>Body: <span data-bind="html: body"></span></div>
         <div>Score: <span data-bind="text: score"></span></div>
+        <button data-bind="click: markPost">Mark</button>
+        <input type="checkbox" data-bind="checked: markPost">
     </li>
 </ul>
 

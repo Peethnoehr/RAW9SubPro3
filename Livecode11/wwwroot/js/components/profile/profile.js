@@ -24,7 +24,9 @@
             inputpassword,
             inputemail,
             changeProfile,
-            deleteProfile
+            changedProfile,
+            deleteProfile,
+            deletedProfile
         };
     };
 });
