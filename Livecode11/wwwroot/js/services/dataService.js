@@ -62,6 +62,27 @@
         alert("Stringified output: "+JSON.stringify(data));
         callback(data);
     };
+
+    var deleteMark = async function(callback, username, markid) { 
+        alert("username input: "+username);
+        alert("markID input: "+markid)
+        var response = await fetch("api/auth/"+markid,{
+            method: 'DELETE', // *GET, POST, PUT, DELETE, etc.
+            mode: 'cors', // no-cors, *cors, same-origin
+            cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+            credentials: 'same-origin', // include, *same-origin, omit
+            headers: {
+                'Content-Type': 'application/json'
+                // 'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            redirect: 'follow', // manual, *follow, error
+            referrer: 'no-referrer', // no-referrer, *client
+        });
+        alert("After fetch");
+        var data = await response.json();
+        alert("Stringified output: "+JSON.stringify(data));
+        callback(data);
+    };
     
     var getMarkings = async function(callback, username) {
         alert("username input: "+username());
@@ -219,6 +240,7 @@
         searchHistory,
         changeProfile,
         deleteProfile,
-        markPost
+        markPost,
+        deleteMark
     };
 });

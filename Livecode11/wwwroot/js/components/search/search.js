@@ -44,6 +44,8 @@
             searchedPosts(data);
             postdata(JSON.stringify(data[0].title));
             parsed(JSON.parse(data));
+            getMarkings();
+            checkPosts();
         },inputsearch());
     };
 
@@ -63,17 +65,26 @@
 
     var checkPosts = function(searchedPosts, markedPosts){
         searchedPosts.forEach(function (searchedPosts) {
-            if (searchedPosts.id === markedPosts.postid) {
-                searchedPosts.markCheck = true;
-            } 
+             markedPosts.forEach(function (markedPosts){
+                if (searchedPosts.id === markedPosts.postid) {
+                    searchedPosts.markCheck = true;
+                }
+            })
         })
     };
     
-    var markPost = function(){
-        ds.markPost( data => {
-            markedPost(data);
+    var clickmarkPost = function(){
+        if (markCheck !== true){
+            ds.markPost( data => {
+                markedPost(data);
             var annotation = prompt("Please enter an annotation:", "Text");
-        }, username(), postid(), annotation()); //Needs postid?
+            }, username(), postid(), annotation()); //Needs postid?    
+        }
+        if (markCheck === true){
+            ds.deleteMark( data => {
+                deletedMark(data);
+            }, username(), postid());
+        }
     };
     
     return function (params) {
