@@ -1,5 +1,7 @@
 ﻿﻿define(["knockout", "store"], function (ko, store) {
-
+    var currentParams = ko.observable({
+        userName: ko.observable()
+    });
     var menuElements = [
         {
             name: "Login",
@@ -59,6 +61,7 @@
         currentComponent,
         menuElements,
         changeContent,
-        isSelected
+        isSelected,
+        currentParams
     };
 });
