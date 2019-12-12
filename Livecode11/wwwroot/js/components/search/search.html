@@ -1,10 +1,11 @@
-﻿
+﻿<div data-bind="text: markedPosts().length"></div>
 <div>
     <ul class="label" data-bind="foreach: paginated">
         <li>
             <input type="text" data-bind="value: title"/>
             <input type="html" data-bind="value: body"/>
             <input type="text" data-bind="value: score"/>
+            <button data-bind="click: $parent.clickMarkPost">Mark</button>
         </li>
     </ul>
     <div class="pager">

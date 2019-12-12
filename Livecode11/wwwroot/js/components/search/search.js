@@ -1,10 +1,11 @@
 ﻿﻿define(["jquery", "knockout", "dataService", "jqcloud"], function($, ko, ds) {
     var searchedPosts = ko.observableArray([]);
-    var postdata = ko.observable();
-    var parsed = ko.observable();
     var inputsearch = ko.observable();
-    //var markedPosts = ko.observableArray();
+    var markedPosts = ko.observableArray([]);
+    var markedPost = ko.observable();
+    var deletedMark = ko.observable();
     var username;
+    var annotation;
     var pageNumber = ko.observable(0);
     var nbPerPage = 25;
     var totalPages = ko.computed(function() {
@@ -42,24 +43,28 @@
         alert("TestCall");
         ds.searchPost( data => {
             searchedPosts(data);
-            postdata(JSON.stringify(data[0].title));
-            parsed(JSON.parse(data));
-            //getMarkings();
-            //checkPosts();
-        },inputsearch(), username());
+            alert("Searched: "+JSON.stringify(searchedPosts()));
+            alert("Marked: "+JSON.stringify(markedPosts()));
+            checkPosts(searchedPosts(), markedPosts());
+    },inputsearch(), username(), markedPosts());
     };
 
-    /*var getMarkings = function(){
-        ds.getMarkings( data => {
-            markedPosts(data);
-    }, username());
+    var getMarkings = function(){
+        alert("Does getMarkings get called?");
+        ds.getMarkings(markedPosts, username);
     };
     
-    var checkPosts = function(){
-        searchedPosts.forEach(function (searchedPosts) {
-             markedPosts.forEach(function (markedPosts){
-                if (searchedPosts.id === markedPosts.postid) {
-                    searchedPosts.markCheck = true;
+    var checkPosts = function(searchedPosts, markedPosts){
+        alert("CheckPosts SearchedPosts: "+JSON.stringify(searchedPosts));
+        alert("CheckPosts MarkedPosts: "+JSON.stringify(markedPosts));
+        searchedPosts.forEach(function (a) {
+             markedPosts.forEach(function (b){
+                if (a.id === b.postId) {
+                    a.markCheck = true;
+                    alert("IsMarked");
+                }
+                else {
+                    a.markCheck = false;
                 }
             })
         })
@@ -67,26 +72,25 @@
     
     var clickMarkPost = function(){
         if (markCheck !== true){
+            var annotation = prompt("Please enter an annotation:", "Text");
             ds.markPost( data => {
                 markedPost(data);
-            var annotation = prompt("Please enter an annotation:", "Text");
-            }, username(), postid(), annotation());     
+            }, username, id, annotation);     
         }
         if (markCheck === true){
             ds.deleteMark( data => {
                 deletedMark(data);
-            }, username(), postid());
+            }, username, id);
         }
-    };*/
+    };
     
     return function (params) {
         username = params.userName;
+        getMarkings();
         return {
             inputsearch,
             username,
             searchedPosts,
-            postdata,
-            parsed,
             pageNumber,
             nbPerPage,
             totalPages,
@@ -96,12 +100,14 @@
             next,
             previous,
             searchPost,
-            /*clickMarkPost,
+            clickMarkPost,
             markedPosts,
             getMarkings,
-            postid,
+            //postid,
             annotation,
-            checkPosts*/
+            checkPosts,
+            markedPost,
+            deletedMark
         };
     };
 });
