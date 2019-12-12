@@ -1,5 +1,5 @@
 ﻿﻿define(["jquery", "knockout", "dataService", "jqcloud"], function($, ko, ds) {
-   
+    var test = ko.observable({a: abc});
     var inputid = ko.observable();
     var detailedPost = ko.observable();
     var detailedArrayPost = ko.observableArray([]);
@@ -17,7 +17,8 @@
             inputid,
             detailedPost,
             detailedArrayPost,
-            detailPost
+            detailPost,
+            test
         };
     };
 });
