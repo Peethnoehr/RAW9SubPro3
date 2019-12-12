@@ -22,3 +22,7 @@
     };
 });
 
+//Opret seperat component for answers
+
+//Inde foreach loop har adgang til elementet
+

@@ -133,9 +133,10 @@
         callback(data)
     };
     
-    var searchPost = async function(callback, inputsearch) {
+    var searchPost = async function(callback, inputsearch, username) {
         alert("Test input: "+inputsearch);
-        var postsearch = {searchtext:inputsearch};
+        alert("Test username: "+username);
+        var postsearch = {searchtext:inputsearch, username:username};
         var response = await fetch ("api/posts/search",{
             method: 'POST', // *GET, POST, PUT, DELETE, etc.
             mode: 'cors', // no-cors, *cors, same-origin
@@ -182,7 +183,7 @@
         alert("Returned search: "+data);
         callback(data)
     };
-
+    
     var changeProfile = async function(callback, inputusername, inputpassword, inputemail) {
         alert("username input: "+inputusername);
         alert("password input: "+inputpassword);

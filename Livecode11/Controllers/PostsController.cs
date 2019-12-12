@@ -1,4 +1,5 @@
-﻿﻿using System.Linq;
+﻿﻿using System;
+ using System.Linq;
 using DataAccessLayer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -52,8 +53,7 @@ namespace WebServiceToken.Controllers
         public ActionResult GetSearch([FromBody]TextForPost searchtext)
         {
             var search = _dataService.searchPosts(searchtext.SearchText);
-            // var user = 
-            // var addsearchhistory = _dataService.CreateSearchHistory(searchtext,user);
+            _dataService.CreateSearchHistory(searchtext.SearchText, searchtext.UserName, DateTime.Now);
             if (search == null) return NotFound();
 
             return Ok(search); //Does this actually return anything??

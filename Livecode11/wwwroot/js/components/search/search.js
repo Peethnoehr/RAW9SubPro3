@@ -3,7 +3,7 @@
     var postdata = ko.observable();
     var parsed = ko.observable();
     var inputsearch = ko.observable();
-    var markedPosts = ko.observableArray();
+    //var markedPosts = ko.observableArray();
     var username;
     var pageNumber = ko.observable(0);
     var nbPerPage = 25;
@@ -44,26 +44,18 @@
             searchedPosts(data);
             postdata(JSON.stringify(data[0].title));
             parsed(JSON.parse(data));
-            getMarkings();
-            checkPosts();
-        },inputsearch());
+            //getMarkings();
+            //checkPosts();
+        },inputsearch(), username());
     };
 
-    var getMarkings = function(){
+    /*var getMarkings = function(){
         ds.getMarkings( data => {
             markedPosts(data);
     }, username());
     };
     
-    /*var checkPosts = function(searchedPosts, markedPosts){
-        searchedPosts.forEach(function (searchedPosts) {
-                if (searchedPosts.id === markedPosts.postid) {
-                    entry.markCheck(true)
-                }
-        })
-    };*/
-
-    var checkPosts = function(searchedPosts, markedPosts){
+    var checkPosts = function(){
         searchedPosts.forEach(function (searchedPosts) {
              markedPosts.forEach(function (markedPosts){
                 if (searchedPosts.id === markedPosts.postid) {
@@ -73,24 +65,25 @@
         })
     };
     
-    var clickmarkPost = function(){
+    var clickMarkPost = function(){
         if (markCheck !== true){
             ds.markPost( data => {
                 markedPost(data);
             var annotation = prompt("Please enter an annotation:", "Text");
-            }, username(), postid(), annotation()); //Needs postid?    
+            }, username(), postid(), annotation());     
         }
         if (markCheck === true){
             ds.deleteMark( data => {
                 deletedMark(data);
             }, username(), postid());
         }
-    };
+    };*/
     
     return function (params) {
         username = params.userName;
         return {
             inputsearch,
+            username,
             searchedPosts,
             postdata,
             parsed,
@@ -103,14 +96,12 @@
             next,
             previous,
             searchPost,
-            markPost,
+            /*clickMarkPost,
             markedPosts,
             getMarkings,
             postid,
             annotation,
-            checkPosts
+            checkPosts*/
         };
     };
 });
-
-// 
