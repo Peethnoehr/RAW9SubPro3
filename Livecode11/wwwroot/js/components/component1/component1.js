@@ -1,18 +1,19 @@
-﻿﻿define(['knockout', 'dataService', 'store'], function (ko, ds, store) {
-    var persons = ko.observableArray([]);
-    
-    var selectPerson = function (person) {
-        store.dispatch(store.actions.selectPerson(person));
-        store.dispatch(store.actions.selectMenu("Component 2"));
-        //postman.publish("selectperson", person);
+﻿﻿define(["jquery", "knockout", "dataService", "jqcloud"], function($, ko, ds) {
+    var inputusername = ko.observable();
+    var inputpassword = ko.observable();
+    var username; // = ko.observable("initialValue");
+    var login = function() {
+        ds.login(data => {
+            username(data.userName);
+    },inputusername(),inputpassword());
     };
-
-    ds.getNames(persons);
-
     return function (params) {
+        username = params.userName;
         return {
-            persons,
-            selectPerson
+            username,
+            inputusername,
+            inputpassword,
+            login
         };
     };
 });
