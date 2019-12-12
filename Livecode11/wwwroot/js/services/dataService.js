@@ -102,8 +102,8 @@
         });
         alert("After fetch");
         var data = await response.json();
-        alert("Stringified input: "+JSON.stringify(user));
-        alert("Stringified output: "+JSON.stringify(data));
+        alert("GetMarkings input: "+JSON.stringify(user));
+        alert("GetMarkings output: "+JSON.stringify(data));
         callback(data);
     };
     
@@ -134,8 +134,6 @@
     };
     
     var searchPost = async function(callback, inputsearch, username) {
-        alert("Test input: "+inputsearch);
-        alert("Test username: "+username);
         var postsearch = {searchtext:inputsearch, username:username};
         var response = await fetch ("api/posts/search",{
             method: 'POST', // *GET, POST, PUT, DELETE, etc.
@@ -152,10 +150,7 @@
         });
         alert("After fetch");
         var data = await response.json();
-        alert("Stringified postsearch: "+JSON.stringify(postsearch));
-        alert("Stringified hardcoded input: "+JSON.stringify({"postsearch":"TEST"}));
         alert("Stringified output: "+JSON.stringify(data));
-        alert("Returned search: "+data);
         callback(data)
     };
 
