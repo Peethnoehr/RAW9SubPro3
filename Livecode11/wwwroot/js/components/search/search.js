@@ -58,29 +58,30 @@
         alert("CheckPosts SearchedPosts: "+JSON.stringify(searchedPosts));
         alert("CheckPosts MarkedPosts: "+JSON.stringify(markedPosts));
         searchedPosts.forEach(function (a) {
+            a.markCheck = false;
              markedPosts.forEach(function (b){
                 if (a.id === b.postId) {
                     a.markCheck = true;
+                    a.markId = b.id;
                     alert("IsMarked");
-                }
-                else {
-                    a.markCheck = false;
                 }
             })
         })
     };
     
-    var clickMarkPost = function(){
-        if (markCheck !== true){
+    var clickMarkPost = function(post){
+        if (post.markCheck !== true){
             var annotation = prompt("Please enter an annotation:", "Text");
+            post.markCheck = true;
             ds.markPost( data => {
-                markedPost(data);
-            }, username, id, annotation);     
+                post.markId = data.id;
+            }, username, post.id, annotation);     
         }
-        if (markCheck === true){
+        else {
+            post.markCheck = false;
             ds.deleteMark( data => {
                 deletedMark(data);
-            }, username, id);
+            }, username, post.markId);
         }
     };
     

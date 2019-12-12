@@ -40,8 +40,8 @@
 
     var markPost = async function(callback, username, postid, annotation) {
         alert("username: "+username());
-        alert("id: "+postid());
-        alert("annotation: "+annotation());
+        alert("id: "+postid);
+        alert("annotation: "+annotation);
         var marking = {UserName:username(), PostId:postid, Annotation:annotation};
         var response = await fetch("api/mark",{
             method: 'POST', // *GET, POST, PUT, DELETE, etc.
@@ -64,9 +64,9 @@
     };
 
     var deleteMark = async function(callback, username, markid) { 
-        alert("username input: "+username);
+        alert("username input: "+username());
         alert("markID input: "+markid)
-        var response = await fetch("api/auth/"+markid,{
+        var response = await fetch("api/mark/"+markid,{
             method: 'DELETE', // *GET, POST, PUT, DELETE, etc.
             mode: 'cors', // no-cors, *cors, same-origin
             cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
