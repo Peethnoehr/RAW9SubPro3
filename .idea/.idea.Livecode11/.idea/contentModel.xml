@@ -53,6 +53,7 @@
         <e p="libman.json" t="Include" />
         <e p="Livecode11.csproj" t="IncludeRecursive" />
         <e p="Models" t="Include">
+          <e p="IdForWords.cs" t="Include" />
           <e p="TextForPost.cs" t="Include" />
           <e p="UserForCreationDto.cs" t="Include" />
           <e p="UserForLoginDto.cs" t="Include" />
