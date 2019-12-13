@@ -226,6 +226,50 @@
         callback(data);
     };
     
+    var getSearchWords = async function (callback, inputid) {
+        alert("id input: "+inputid);
+        var searchwords = {Id:inputid};
+        var response = await fetch("api/words",{
+            method: 'PUT', // *GET, POST, PUT, DELETE, etc.
+            mode: 'cors', // no-cors, *cors, same-origin
+            cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+            credentials: 'same-origin', // include, *same-origin, omit
+            headers: {
+                'Content-Type': 'application/json'
+                // 'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            redirect: 'follow', // manual, *follow, error
+            referrer: 'no-referrer', // no-referrer, *client
+            body: JSON.stringify(searchwords) // body data type must match "Content-Type" header
+        });
+        alert("After fetch");
+        var data = await response.json();
+        alert("Stringified output: "+JSON.stringify(data));
+        callback(data);
+    }
+
+    var getStopWords = async function (callback) {
+        alert("Before fetch");
+        var response = await fetch("api/words/stop",{
+            method: 'PUT', // *GET, POST, PUT, DELETE, etc.
+            mode: 'cors', // no-cors, *cors, same-origin
+            cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+            credentials: 'same-origin', // include, *same-origin, omit
+            headers: {
+                'Content-Type': 'application/json'
+                // 'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            redirect: 'follow', // manual, *follow, error
+            referrer: 'no-referrer', // no-referrer, *client
+        });
+        alert("After fetch");
+        var data = await response.json();
+        alert("Stringified output: "+JSON.stringify(data));
+        callback(data);
+    }
+    
+    
+    
     return {
         getMarkings,
         getNames,
@@ -237,6 +281,8 @@
         changeProfile,
         deleteProfile,
         markPost,
-        deleteMark
+        deleteMark,
+        getSearchWords,
+        getStopWords
     };
 });

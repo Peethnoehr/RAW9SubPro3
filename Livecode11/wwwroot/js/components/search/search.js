@@ -48,7 +48,7 @@
             checkPosts(searchedPosts(), markedPosts());
     },inputsearch(), username(), markedPosts());
     };
-
+    
     var getMarkings = function(){
         alert("Does getMarkings get called?");
         ds.getMarkings(markedPosts, username);
@@ -104,11 +104,10 @@
             clickMarkPost,
             markedPosts,
             getMarkings,
-            //postid,
             annotation,
             checkPosts,
             markedPost,
-            deletedMark
+            deletedMark,
         };
     };
 });

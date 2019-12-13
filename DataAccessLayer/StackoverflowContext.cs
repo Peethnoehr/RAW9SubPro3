@@ -103,6 +103,7 @@ namespace DataAccessLayer
             modelBuilder.Entity<SearchWord>().Property(m => m.Lemma).HasColumnName("lemma");
 
             modelBuilder.Entity<StopWord>().ToTable("stopwords");
+            modelBuilder.Entity<StopWord>().HasKey(o => new {o.Word});
             modelBuilder.Entity<StopWord>().Property(m => m.Word).HasColumnName("word");
             
             modelBuilder.Entity<QAUser>().ToTable("qa_user");
