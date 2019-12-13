@@ -34,6 +34,7 @@
         alert("Stringified hardcoded input: "+JSON.stringify({"UserName":"Test","Password":"TestPW"}));
         alert("Stringified output: "+JSON.stringify(data));
         alert("returned username: "+data.userName);
+        alert("returned email: "+data.email);
         alert("returned token: "+data.token);
         callback(data);
     };

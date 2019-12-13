@@ -117,7 +117,7 @@ namespace WebServiceToken.Controllers
 
             var token = tokenHandler.WriteToken(securityToken);
 
-            return Ok(new {user.UserName, token});
+            return Ok(new {user.UserName, user.Email, token});
         }
         
         /*
