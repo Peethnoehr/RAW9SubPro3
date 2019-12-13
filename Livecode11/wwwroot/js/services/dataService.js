@@ -132,6 +132,7 @@
     };
     
     var searchPost = async function(callback, inputsearch, username) {
+        alert(JSON.stringify(inputsearch)+JSON.stringify(username));
         var postsearch = {searchtext:inputsearch, username:username};
         var response = await fetch ("api/posts/search",{
             method: 'POST', // *GET, POST, PUT, DELETE, etc.
