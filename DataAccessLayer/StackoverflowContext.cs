@@ -19,6 +19,9 @@ namespace DataAccessLayer
         public DbSet<Question> Questions { get; set; }
         public DbSet<SearchHistory> SearchHistories { get; set; }
         public DbSet<Tag> Tags { get; set; }
+        public DbSet<SearchWord> Words { get; set; }
+        public DbSet<StopWord> StopWords { get; set; }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -88,6 +91,19 @@ namespace DataAccessLayer
             modelBuilder.Entity<Tag>().ToTable("qa_tag");
             modelBuilder.Entity<Tag>().Property(m => m.Id).HasColumnName("tagid");
             modelBuilder.Entity<Tag>().Property(m => m.Name).HasColumnName("tagname");
+            
+            modelBuilder.Entity<SearchWord>().ToTable("words");
+            modelBuilder.Entity<SearchWord>().Property(m => m.Id).HasColumnName("id");
+            modelBuilder.Entity<SearchWord>().Property(m => m.Tablename).HasColumnName("tablename");
+            modelBuilder.Entity<SearchWord>().Property(m => m.What).HasColumnName("what");
+            modelBuilder.Entity<SearchWord>().Property(m => m.Sen).HasColumnName("sen");
+            modelBuilder.Entity<SearchWord>().Property(m => m.Idx).HasColumnName("idx");
+            modelBuilder.Entity<SearchWord>().Property(m => m.Word).HasColumnName("word");
+            modelBuilder.Entity<SearchWord>().Property(m => m.Pos).HasColumnName("pos");
+            modelBuilder.Entity<SearchWord>().Property(m => m.Lemma).HasColumnName("lemma");
+
+            modelBuilder.Entity<StopWord>().ToTable("stopwords");
+            modelBuilder.Entity<StopWord>().Property(m => m.Word).HasColumnName("word");
             
             modelBuilder.Entity<QAUser>().ToTable("qa_user");
             modelBuilder.Entity<QAUser>().Property(m => m.Id).HasColumnName("userid");

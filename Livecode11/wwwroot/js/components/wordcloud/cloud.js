@@ -6,21 +6,6 @@
         var words = [];
         var word = ko.observable();
         var weight = ko.observable();
-        var inputusername = ko.observable();
-        var inputpassword = ko.observable();
-        var inputid = ko.observable();
-        var inputsearch = ko.observable();
-        var inputsearchhid = ko.observable();
-        var postsarray = ko.observable([]);
-        var username = ko.observable("test");
-        var detailedPost = ko.observable();
-        var searchedPost = ko.observable();
-      
-        var login = function() {
-            ds.login(data => {
-            username(data.userName);
-        },inputusername(),inputpassword());
-        };
         
         var addWord = function() {
             words.push({ text: word(), weight: weight() });
@@ -42,10 +27,6 @@
             word,
             weight,
             addWord,
-            username,
-            inputusername,
-            inputpassword,
-            login,
         };
     };
 });

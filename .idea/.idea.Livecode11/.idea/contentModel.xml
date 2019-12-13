@@ -32,7 +32,9 @@
         <e p="QAUser.cs" t="Include" />
         <e p="Question.cs" t="Include" />
         <e p="SearchHistory.cs" t="Include" />
+        <e p="SearchWord.cs" t="Include" />
         <e p="StackoverflowContext.cs" t="Include" />
+        <e p="StopWord.cs" t="Include" />
         <e p="Tag.cs" t="Include" />
         <e p="User.cs" t="Include" />
       </e>
