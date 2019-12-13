@@ -110,7 +110,7 @@
     
     var detailPost = async function(callback, inputid) {
         var post = parseInt(inputid,10);
-        alert("id input: "+post);
+        //alert("id input: "+post);
         var postfind = {Id:post};
         var response = await fetch("api/posts", {
             method: 'POST', // *GET, POST, PUT, DELETE, etc.
@@ -125,12 +125,10 @@
             referrer: 'no-referrer', // no-referrer, *client
             body: JSON.stringify(postfind) // body data type must match "Content-Type" header    
         });
-        alert("After fetch");
+        //alert("After fetch");
         var data = await response.json();
-        alert("Stringified postfind: "+JSON.stringify(postfind));
-        alert("Stringified hardcoded input: "+JSON.stringify({"postid":"19"}));
-        alert("Stringified output: "+JSON.stringify(data));
-        alert("Returned post: "+data);
+        //alert("Stringified postfind: "+JSON.stringify(postfind));
+        //alert("Stringified output: "+JSON.stringify(data));
         callback(data)
     };
     

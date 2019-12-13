@@ -5,7 +5,6 @@
     var detailedArrayPost = ko.observableArray([]);
     var username;
     var getPost = function() {
-        alert("TESTCall");
         ds.detailPost( data => {
             question(data);
             detailedArrayPost(data.answers)
@@ -22,8 +21,3 @@
         };
     };
 });
-
-//Opret seperat component for answers
-
-//Inde foreach loop har adgang til elementet
-

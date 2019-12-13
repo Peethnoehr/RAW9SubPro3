@@ -1,23 +1,87 @@
-﻿<div>
-    <div>
-        Post ID: <input data-bind="value: inputid"/>
-    </div>
-    <div>
-        <button data-bind="click: getPost">Find</button>
-    </div>
-</div>
-<div data-bind="with: question()">
-    <div data-bind="text: title"></div>
-    <div data-bind="with: post">
-        <div data-bind="html: body"></div>
-        <div data-bind="foreach: comments">
-            <div>Comment</div>
-            <div data-bind="text: textContain"></div>
+﻿<div class="container-fluid">
+    <div class="row mb-4 mt-4">
+        <div class="col-sm-3">
+            <form>
+                <button class="btn btn-primary" data-bind="click: getPost">Open Post</button>
+                <input data-bind="value: inputid" placeholder="Post ID"/>
+            </form>
         </div>
     </div>
-    <div data-bind="foreach: answers">
-        score: <div data-bind="text: score"></div>
-        <div data-bind="html: body"></div>
+    <div class="row">
+        <div class="col">
+            <div data-bind="with: question()">
+                <div class="row mb-4">
+                    <div class="col-sm-8">
+                        <div class="card bg-light border-secondary">
+                            <div class="card-header bg-secondary text-white">
+                                <h1><span data-bind="text: title"></span></h1>
+                            </div>
+                            <div class="card-body">
+                                <div data-bind="with: post">
+                                    <div data-bind="html: body"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-bind="with: post">
+                    <div class="row mb-4">
+                        <div class="col">
+                            <div data-bind="foreach: comments">
+                                <div class="row mb-2">
+                                    <div class="col-sm-6">
+                                        <div class="card border-secondary">
+                                            <div class="card-header">
+                                                <small>Score: <span data-bind="text: score"></span></small>
+                                            </div>
+                                            <div class="card-body">
+                                                <small>
+                                                    <div data-bind="text: textContain"></div>
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-bind="foreach: answers">
+                    <div class="row mb-4">
+                        <div class="col-sm-8">
+                            <div class="card border-secondary">
+                                <div class="card-header">
+                                    <b>Score: <span data-bind="text: score"></span></b>
+                                </div>
+                                <div class="card-body">
+                                    <div data-bind="html: body"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col">
+                            <div data-bind="foreach: comments">
+                                <div class="row mb-2">
+                                    <div class="col-sm-6">
+                                        <div class="card border-secondary">
+                                            <div class="card-header">
+                                                <small>Score: <span data-bind="text: score"></span></small>
+                                            </div>
+                                            <div class="card-body">
+                                                <small>
+                                                    <div data-bind="text: textContain"></div>
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <!--<div data-bind="foreach: answers">
