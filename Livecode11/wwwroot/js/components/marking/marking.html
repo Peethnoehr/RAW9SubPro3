@@ -1,6 +1,21 @@
-﻿<div><span data-bind="text: username"></span></div>
-<div>
-    <div>
-        <button data-bind="click: alertMarkings">Alert Markings</button>
+﻿<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <div data-bind="foreach: markings">
+                <div class="row">
+                    <div class="col border-secondary">
+                        <div>Post ID: <span data-bind="text: post.id"></span></div>
+                    </div>
+                    <div class="col border-secondary">
+                        <div>Post Score: <span data-bind="text: post.score"></span></div>
+                    </div>
+                    <div class="col border-secondary">
+                        <div>Annotation: <span data-bind="text: annotation"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+
+<div><span data-bind="text: username"></span></div>

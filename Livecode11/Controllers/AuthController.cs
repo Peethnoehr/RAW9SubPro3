@@ -161,6 +161,8 @@ namespace WebServiceToken.Controllers
         [HttpDelete("{username}")]
         public ActionResult DeleteUser(string username)
         {
+            Debug.WriteLine("TESTING WRITELINE");
+            Debug.WriteLine(username);
             if (!_dataService.DeleteUser(username))
                 return NotFound();
             return Ok();

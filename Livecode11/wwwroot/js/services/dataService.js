@@ -86,7 +86,7 @@
     };
     
     var getMarkings = async function(callback, username) {
-        alert("username input: "+username());
+        alert("user:"+username());
         var user = {UserName:username()};
         var response = await fetch("api/mark/markings",{
             method: 'POST', // *GET, POST, PUT, DELETE, etc.
@@ -103,7 +103,6 @@
         });
         alert("After fetch");
         var data = await response.json();
-        alert("GetMarkings input: "+JSON.stringify(user));
         alert("GetMarkings output: "+JSON.stringify(data));
         callback(data);
     };
@@ -179,10 +178,8 @@
     };
     
     var changeProfile = async function(callback, inputusername, inputpassword, inputemail) {
-        alert("username input: "+inputusername);
-        alert("password input: "+inputpassword);
-        alert("password input: "+inputemail);
         var profile = {UserName:inputusername, Password:inputpassword, Email:inputemail};
+        alert(JSON.stringify(profile));
         var response = await fetch("api/auth",{
             method: 'PUT', // *GET, POST, PUT, DELETE, etc.
             mode: 'cors', // no-cors, *cors, same-origin
@@ -197,17 +194,13 @@
             body: JSON.stringify(profile) // body data type must match "Content-Type" header
         });
         alert("After fetch");
-        var data = await response.json();
-        alert("Stringified credentials: "+JSON.stringify(profile));
-        alert("Stringified hardcoded input: "+JSON.stringify({"UserName":"Test","Password":"TestPW", "Email":"test@test.test"}));
-        alert("Stringified output: "+JSON.stringify(data));
-        alert("returned username: "+data.userName);
-        callback(data);
+        //var data = await response.json();
+        callback();
     };
 
-    var deleteProfile = async function(callback, inputusername2) { //DOES NOT WORK...
-        alert("username input: "+inputusername2);
-        var response = await fetch("api/auth/"+inputusername2,{
+    var deleteProfile = async function(callback, username) { //DOES NOT WORK...
+        alert("username input: "+username);
+        var response = await fetch("api/auth/"+username.toString(),{
             method: 'DELETE', // *GET, POST, PUT, DELETE, etc.
             mode: 'cors', // no-cors, *cors, same-origin
             cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
@@ -224,7 +217,7 @@
         alert("Stringified output: "+JSON.stringify(data));
         callback(data);
     };
-    
+
     var getSearchWords = async function (callback, inputid) {
         alert("id input: "+inputid);
         var searchwords = {Id:inputid};
@@ -245,7 +238,7 @@
         var data = await response.json();
         alert("Stringified output: "+JSON.stringify(data));
         callback(data);
-    }
+    };
 
     var getStopWords = async function (callback) {
         alert("Before fetch");
@@ -265,9 +258,7 @@
         var data = await response.json();
         alert("Stringified output: "+JSON.stringify(data));
         callback(data);
-    }
-    
-    
+    };
     
     return {
         getMarkings,
