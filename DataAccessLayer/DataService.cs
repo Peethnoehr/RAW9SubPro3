@@ -368,7 +368,6 @@ namespace DataAccessLayer
                 .ToList();
             
             var posts = function.ToList();
-
             return posts;
         }
 
@@ -383,6 +382,33 @@ namespace DataAccessLayer
                 select new Answer() {Id = answer.Id, QuestionId = answer.QuestionId};
             
             return query.FirstOrDefault();
+        }
+        // Words in post
+        public List<SearchWord> GetWords(int postid)
+        {
+            using var db = new StackoverflowContext();
+
+            var query =
+                from word in db.Words
+                where word.Id == postid
+                select new SearchWord() {Id = word.Id, Word = word.Word};
+
+            var words = query.ToList();
+
+            return words;
+
+        }
+        public List<StopWord> GetStopWords()
+        {
+            using var db = new StackoverflowContext();
+
+            var query =
+                from word in db.StopWords
+                select word;
+                    
+            var stopwords = query.ToList();
+
+            return stopwords;
         }
     }
 }
