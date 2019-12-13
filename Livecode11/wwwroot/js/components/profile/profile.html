@@ -1,23 +1,55 @@
-﻿<div>
-    <div>
-        Username: <input data-bind="value: inputusername"/>
-    </div>
-    <div>
-        Password: <input data-bind="value: inputpassword"/>
-    </div>
-    <div>
-        E-mail: <input data-bind="value: inputemail"/>
-    </div>
-    <div>
-        <button data-bind="click: changeProfile">Change</button>
-    </div>
-</div>
-
-<div>
-    <div>
-        Username: <input data-bind="value: inputusername2"/>
-    </div>
-    <div>
-        <button data-bind="click: deleteProfile">Delete</button>
+﻿<div class="row">
+    <div class="container-fluid">
+        <div class="col-sm-12">
+            <div class="row ">
+                <div class="container-fluid">
+                    <div class="col-sm-4">
+                        <br>
+                        <h1>Profile Information</h1>
+                        <b>Username:</b> <span data-bind="text: username"></span><br>
+                        <b>E-mail:</b> <span data-bind="text: email"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container-fluid">
+                    <div class="col-sm-2">
+                        <br>
+                        <h4>Update your profile</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container-fluid">
+                    <div class="col-sm-2">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your new username"
+                                       data-bind="value: inputusername">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Your new email"
+                                       data-bind="value: inputpassword">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Your new password"
+                                       data-bind="value: inputpassword">
+                            </div>
+                            <button type="submit" class="btn btn-primary" data-bind="click: ChangeProfile">Update your
+                                information
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container-fluid">
+                    <div class="col-sm-2">
+                        <br>
+                        <button class="btn btn-warning" data-bind="click: deleteProfile">Delete Profile</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

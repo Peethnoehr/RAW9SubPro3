@@ -1,6 +1,7 @@
 ﻿﻿define(["knockout", "store"], function (ko, store) {
     var currentParams = ko.observable({
-        userName: ko.observable()
+        userName: ko.observable(),
+        email: ko.observable()
     });
     var menuElements = [
         {

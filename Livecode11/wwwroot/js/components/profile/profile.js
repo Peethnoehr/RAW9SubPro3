@@ -2,10 +2,10 @@
     var inputusername = ko.observable();
     var inputpassword = ko.observable();
     var inputemail = ko.observable();
-    var inputusername2 = ko.observable();
     var changedProfile = ko.observable();
     var deletedProfile = ko.observable();
-    
+    var username;
+    var email;
     var changeProfile = function() {
         ds.changeProfile(data => {
             changedProfile(data);
@@ -14,19 +14,22 @@
     var deleteProfile = function() {    
         ds.deleteProfile(data => {
             deletedProfile(data);
-    },inputusername2());
+    },username());
     };
     
     return function (params) {
+        username = ko.observable("Test");//params.userName; //
+        email = ko.observable("test@test.test"); //params.email; //
         return {
             inputusername,
-            inputusername2,
             inputpassword,
             inputemail,
             changeProfile,
             changedProfile,
             deleteProfile,
-            deletedProfile
+            deletedProfile,
+            username,
+            email
         };
     };
 });
