@@ -1,7 +1,8 @@
 ﻿﻿define(["knockout", "store"], function (ko, store) {
     var currentParams = ko.observable({
         userName: ko.observable(),
-        email: ko.observable()
+        email: ko.observable(),
+        selectedPost: ko.observable()
     });
     var menuElements = [
         {
@@ -41,6 +42,7 @@
     var currentMenu = ko.observable(menuElements[0]);
     var currentComponent = ko.observable(currentMenu().component);
     
+    //This is the method for changing component. All components have access to the store so we can reuse this.
     var changeContent = function (menu) {
         store.dispatch(store.actions.selectMenu(menu.name));
     };

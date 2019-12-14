@@ -98,7 +98,7 @@
         else {
             post.markCheck = false;
             ds.deleteMark( data => {
-                deletedMark(data);
+                alert("deletedMark");
             }, username, post.markId);
         }
     };

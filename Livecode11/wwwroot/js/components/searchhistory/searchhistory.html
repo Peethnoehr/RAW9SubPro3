@@ -1,8 +1,23 @@
-﻿<div>
-    <div>
-        SearchHistory: <input data-bind="value: inputsearchhid"/>
-    </div>
-    <div>
-        <button data-bind="click: searchHistory">Find</button>
+﻿<div data-bind="markings.length"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>SearchhistoryId</th>
+                    <th>Search Date</th>
+                    <th>Search Text</th>
+                </tr>
+                </thead>
+                <tbody data-bind="foreach: searchHistory">
+                <tr>
+                    <td data-bind="text: id"></td>
+                    <td data-bind="text: date"></td>
+                    <td data-bind="text: text"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>

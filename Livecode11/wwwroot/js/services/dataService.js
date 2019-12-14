@@ -12,8 +12,8 @@
     };
 
     var login = async function(callback, inputusername, inputpassword) {
-        alert("username input: "+inputusername);
-        alert("password input: "+inputpassword);
+        //alert("username input: "+inputusername);
+        //alert("password input: "+inputpassword);
         var credentials = {UserName:inputusername, Password:inputpassword};
         var response = await fetch("api/auth/tokens",{
             method: 'POST', // *GET, POST, PUT, DELETE, etc.
@@ -28,14 +28,14 @@
             referrer: 'no-referrer', // no-referrer, *client
             body: JSON.stringify(credentials) // body data type must match "Content-Type" header
         });
-        alert("After fetch");
-        var data = await response.json();
+        //alert("After fetch");
+        var data = await response.json();/*
         alert("Stringified credentials: "+JSON.stringify(credentials));
         alert("Stringified hardcoded input: "+JSON.stringify({"UserName":"Test","Password":"TestPW"}));
         alert("Stringified output: "+JSON.stringify(data));
         alert("returned username: "+data.userName);
         alert("returned email: "+data.email);
-        alert("returned token: "+data.token);
+        alert("returned token: "+data.token); */
         callback(data);
     };
 
@@ -80,13 +80,11 @@
             referrer: 'no-referrer', // no-referrer, *client
         });
         alert("After fetch");
-        var data = await response.json();
-        alert("Stringified output: "+JSON.stringify(data));
-        callback(data);
+        callback();
     };
     
     var getMarkings = async function(callback, username) {
-        alert("user:"+username());
+        //alert("user:"+username());
         var user = {UserName:username()};
         var response = await fetch("api/mark/markings",{
             method: 'POST', // *GET, POST, PUT, DELETE, etc.
@@ -101,9 +99,9 @@
             referrer: 'no-referrer', // no-referrer, *client
             body: JSON.stringify(user) // body data type must match "Content-Type" header
         });
-        alert("After fetch");
+        //alert("After fetch");
         var data = await response.json();
-        alert("GetMarkings output: "+JSON.stringify(data));
+        //alert("GetMarkings output: "+JSON.stringify(data));
         callback(data);
     };
     
@@ -153,8 +151,8 @@
         callback(data)
     };
 
-    var searchHistory = async function(callback, inputsearchhid) {
-        alert("Test input: "+inputsearchhid);
+    var getSearchHistory = async function(callback, inputsearchhid) {
+        //alert("Test input: "+inputsearchhid);
         var historysearch = {UserName:inputsearchhid};
         var response = await fetch ("api/search",{
             method: 'POST', // *GET, POST, PUT, DELETE, etc.
@@ -169,13 +167,13 @@
             referrer: 'no-referrer', // no-referrer, *client
             body: JSON.stringify(historysearch) // body data type must match "Content-Type" header  
         });
-        alert("After fetch");
+        //alert("After fetch");
         var data = await response.json();
-        alert("Stringified historysearch: "+JSON.stringify(historysearch));
+        /*alert("Stringified historysearch: "+JSON.stringify(historysearch));
         alert("Stringified hardcoded input: "+JSON.stringify({"historysearch":"TEST"}));
         alert("Stringified output: "+JSON.stringify(data));
         alert("Returned search: "+data);
-        callback(data)
+        */callback(data);
     };
     
     var changeProfile = async function(callback, inputusername, inputpassword, inputemail) {
@@ -268,7 +266,7 @@
         login,
         detailPost,
         searchPost,
-        searchHistory,
+        getSearchHistory,
         changeProfile,
         deleteProfile,
         markPost,

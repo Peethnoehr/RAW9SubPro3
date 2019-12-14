@@ -1,4 +1,4 @@
-﻿﻿define(["knockout"], function (ko) {
+﻿﻿﻿﻿﻿define(["knockout"], function (ko) {
     var currentComponent = ko.observable("parent");
     var currentParams = ko.observable({});
     var changeContent = () => {

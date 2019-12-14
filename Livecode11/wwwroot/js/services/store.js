@@ -46,7 +46,7 @@
                 type: selectMenu,
                 selectedMenu: menu
             };
-        }
+        },
     };
     
     return {
