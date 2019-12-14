@@ -9,7 +9,7 @@
     
         return {
             markings,
-            username,
+            username
         };
     };
 });

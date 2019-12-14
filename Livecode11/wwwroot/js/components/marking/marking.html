@@ -1,21 +1,28 @@
-﻿<div class="container-fluid">
+﻿<div data-bind="markings.length"></div>
+<div class="container-fluid">
     <div class="row">
         <div class="col">
-            <div data-bind="foreach: markings">
-                <div class="row">
-                    <div class="col border-secondary">
-                        <div>Post ID: <span data-bind="text: post.id"></span></div>
-                    </div>
-                    <div class="col border-secondary">
-                        <div>Post Score: <span data-bind="text: post.score"></span></div>
-                    </div>
-                    <div class="col border-secondary">
-                        <div>Annotation: <span data-bind="text: annotation"></span></div>
-                    </div>
-                </div>
-            </div>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Post ID</th>
+                    <th>Post Score</th>
+                    <th>Annotation</th>
+                    <th class="text-center">Actions</th>
+                </tr>
+                </thead>
+                <tbody data-bind="foreach: markings">
+                <tr>
+                    <td data-bind="text: post.id"></td>
+                    <td data-bind="text: post.score"></td>
+                    <td data-bind="text: annotation"></td>
+                    <td class="text-center">
+                        <button class="btn btn-warning mr-2">Remove Marking</button>
+                        <button class="btn btn-primary">Go to post</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>
-
-<div><span data-bind="text: username"></span></div>
