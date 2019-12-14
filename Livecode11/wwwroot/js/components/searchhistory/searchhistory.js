@@ -2,14 +2,17 @@
     
     var inputsearchhid = ko.observable();
     var username;
-    var searchHistory = function(){
+    var searchHistory = ko.observableArray();
+    var getHistory = function(){
         alert("TestCall");
-        ds.searchHistory( data => {
-            searchedHistory(data);
-        },inputsearchhid());
+        ds.getSearchHistory( data => {
+            searchHistory(data);
+            alert(searchHistory().length);
+        },username());
     };
     return function (params) {
         username = params.userName;
+        getHistory();
         return {
             inputsearchhid,
             searchHistory

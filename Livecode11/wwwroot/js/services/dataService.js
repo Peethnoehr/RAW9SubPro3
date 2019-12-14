@@ -84,7 +84,7 @@
     };
     
     var getMarkings = async function(callback, username) {
-        alert("user:"+username());
+        //alert("user:"+username());
         var user = {UserName:username()};
         var response = await fetch("api/mark/markings",{
             method: 'POST', // *GET, POST, PUT, DELETE, etc.
@@ -99,9 +99,9 @@
             referrer: 'no-referrer', // no-referrer, *client
             body: JSON.stringify(user) // body data type must match "Content-Type" header
         });
-        alert("After fetch");
+        //alert("After fetch");
         var data = await response.json();
-        alert("GetMarkings output: "+JSON.stringify(data));
+        //alert("GetMarkings output: "+JSON.stringify(data));
         callback(data);
     };
     
