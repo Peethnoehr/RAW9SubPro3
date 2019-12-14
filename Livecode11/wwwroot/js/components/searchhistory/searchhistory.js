@@ -4,10 +4,8 @@
     var username;
     var searchHistory = ko.observableArray();
     var getHistory = function(){
-        alert("TestCall");
         ds.getSearchHistory( data => {
             searchHistory(data);
-            alert(searchHistory().length);
         },username());
     };
     return function (params) {

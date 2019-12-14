@@ -151,8 +151,8 @@
         callback(data)
     };
 
-    var searchHistory = async function(callback, inputsearchhid) {
-        alert("Test input: "+inputsearchhid);
+    var getSearchHistory = async function(callback, inputsearchhid) {
+        //alert("Test input: "+inputsearchhid);
         var historysearch = {UserName:inputsearchhid};
         var response = await fetch ("api/search",{
             method: 'POST', // *GET, POST, PUT, DELETE, etc.
@@ -167,13 +167,13 @@
             referrer: 'no-referrer', // no-referrer, *client
             body: JSON.stringify(historysearch) // body data type must match "Content-Type" header  
         });
-        alert("After fetch");
+        //alert("After fetch");
         var data = await response.json();
-        alert("Stringified historysearch: "+JSON.stringify(historysearch));
+        /*alert("Stringified historysearch: "+JSON.stringify(historysearch));
         alert("Stringified hardcoded input: "+JSON.stringify({"historysearch":"TEST"}));
         alert("Stringified output: "+JSON.stringify(data));
         alert("Returned search: "+data);
-        callback(data)
+        */callback(data);
     };
     
     var changeProfile = async function(callback, inputusername, inputpassword, inputemail) {
@@ -266,7 +266,7 @@
         login,
         detailPost,
         searchPost,
-        searchHistory,
+        getSearchHistory,
         changeProfile,
         deleteProfile,
         markPost,
