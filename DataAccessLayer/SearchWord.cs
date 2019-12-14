@@ -10,6 +10,7 @@
         public string Word { get; set; }
         public string Pos { get; set; }
         public string Lemma { get; set; }
+        public int Weight { get; set; }
     }
 }
 

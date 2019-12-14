@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Linq;
 using DataAccessLayer;
 using Xunit;
@@ -198,7 +199,8 @@ namespace StackOverFlow.Tests
         {
             var service = new DataService();
             var words = service.GetWords(19);
-            Assert.Equal("Solutions", words.First().Word);
+            Assert.Equal("''", words.First().Word);
+            Assert.Equal(2, words.First().Weight);
         }
 
         [Fact]

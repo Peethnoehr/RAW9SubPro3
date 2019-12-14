@@ -219,9 +219,9 @@
         callback(data);
     };
 
-    var getSearchWords = async function (callback, inputid) {
-        alert("id input: "+inputid);
-        var searchwords = {Id:inputid};
+    var getSearchWords = async function (callback, inputId) {
+        alert("id input: "+inputId);
+        var searchwords = {Id:inputId};
         var response = await fetch("api/words",{
             method: 'PUT', // *GET, POST, PUT, DELETE, etc.
             mode: 'cors', // no-cors, *cors, same-origin

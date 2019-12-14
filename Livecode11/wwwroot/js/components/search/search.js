@@ -8,6 +8,9 @@
     var annotation;
     var pageNumber = ko.observable(0);
     var nbPerPage = 25;
+    var width = params.width || 200;
+    var height = params.height || 200;
+    var words = ko.observableArray([]);
     var totalPages = ko.computed(function() {
         var div = Math.floor(searchedPosts().length / nbPerPage);
         div += searchedPosts.length % nbPerPage > 0 ? 1 : 0;
@@ -43,10 +46,25 @@
         alert("TestCall");
         ds.searchPost( data => {
             searchedPosts(data);
+            alert("Access to arrays: "+JSON.stringify(searchedPosts.Id));
             alert("Searched: "+JSON.stringify(searchedPosts()));
             alert("Marked: "+JSON.stringify(markedPosts()));
             checkPosts(searchedPosts(), markedPosts());
+            jQCloud(searchedPosts());
     },inputsearch(), username(), markedPosts());
+    };
+    
+    var jQCloud = function(searchedPosts){
+        searchedPosts.forEach(function(a)){
+            ds.getSearchWords(data => {
+                words(data);
+            $('#cloud').jQCloud(words,
+                {
+                    width: width,
+                    height: height
+                });
+        });   
+        }
     };
     
     var getMarkings = function(){
@@ -108,6 +126,7 @@
             checkPosts,
             markedPost,
             deletedMark,
+            jQCloud
         };
     };
 });

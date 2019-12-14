@@ -387,11 +387,12 @@ namespace DataAccessLayer
         public List<SearchWord> GetWords(int postid)
         {
             using var db = new StackoverflowContext();
-
             var query =
                 from word in db.Words
-                where word.Id == postid
-                select new SearchWord() {Id = word.Id, Word = word.Word};
+                group word by new {Word = word.Word, Id = word.Id} into gword
+                where (gword.Key.Id == postid && !(from stopword in db.StopWords 
+                          select stopword.Word).Contains(gword.Key.Word))
+                select new SearchWord() {Id = gword.Key.Id, Word = gword.Key.Word, Weight = gword.Key.Word.Length};
 
             var words = query.ToList();
 
