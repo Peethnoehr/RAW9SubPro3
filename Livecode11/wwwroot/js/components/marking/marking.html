@@ -7,6 +7,7 @@
                 <tr>
                     <th>Post ID</th>
                     <th>Post Score</th>
+                    <th>Tags</th>
                     <th>Annotation</th>
                     <th class="text-center">Actions</th>
                 </tr>
@@ -15,9 +16,10 @@
                 <tr>
                     <td data-bind="text: post.id"></td>
                     <td data-bind="text: post.score"></td>
+                    <td><span data-bind="foreach: post.tags"><span data-bind="text: name"></span>, </span></td>
                     <td data-bind="text: annotation"></td>
                     <td class="text-center">
-                        <button class="btn btn-warning mr-2">Remove Marking</button>
+                        <button class="btn btn-warning mr-2" data-bind="click: $parent.deleteMarking">Remove Marking</button>
                         <button class="btn btn-primary">Go to post</button>
                     </td>
                 </tr>
