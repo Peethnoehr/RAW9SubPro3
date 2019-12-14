@@ -23,7 +23,7 @@
         username = params.userName;
         if(selectedPost() !== undefined){
             alert("calling getPost("+selectedPost()+");");
-            getPost(selectedPost());
+            getPostAuto(selectedPost());
         }
         return {
             inputid,
