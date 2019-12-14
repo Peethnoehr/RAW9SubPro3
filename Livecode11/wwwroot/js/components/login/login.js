@@ -3,10 +3,14 @@
         var inputpassword = ko.observable();
         var username; // = ko.observable("initialValue");
         var email;
+        var loggedIn = ko.observable(false);
         var login = function() {
             ds.login(data => {
                 username(data.userName);
                 email(data.email);
+                if (username() !== undefined){
+                    loggedIn(true);
+                }
         },inputusername(),inputpassword());
         };
     return function (params) {    
@@ -17,7 +21,8 @@
             email,
             inputusername,
             inputpassword,
-            login
+            login,
+            loggedIn
         };
     };
 });

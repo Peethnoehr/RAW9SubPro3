@@ -41,6 +41,7 @@
     var currentMenu = ko.observable(menuElements[0]);
     var currentComponent = ko.observable(currentMenu().component);
     
+    //This is the method for changing component. All components have access to the store so we can reuse this.
     var changeContent = function (menu) {
         store.dispatch(store.actions.selectMenu(menu.name));
     };

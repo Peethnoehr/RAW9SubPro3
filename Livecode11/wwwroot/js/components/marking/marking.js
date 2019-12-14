@@ -4,7 +4,7 @@
     var username;// = ko.observable("Test");
     
     var deleteMarking = function(marking){
-        alert("run marking.js.deleteMarking");
+        markings.remove(marking);
         ds.deleteMark(data => {
             alert(JSON.stringify(data));
     }, username, marking.id);
