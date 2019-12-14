@@ -26,7 +26,7 @@ namespace DataAccessLayer
         List<Post> GetAnswers(int postid);
         Answer getAnswer(int postid);
         List<Post> searchPosts(string searchtext);
-        List<SearchWord> GetWords (int postid);
+        List<SearchWord> GetWords (int[] postid);
         List<StopWord> GetStopWords();
     }
 }

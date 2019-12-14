@@ -2,7 +2,7 @@
 {
     public class IdForWords
     {
-        public int Id { get; set; }
+        public int[] Id { get; set; }
         public string Word { get; set; }
     }
 }
