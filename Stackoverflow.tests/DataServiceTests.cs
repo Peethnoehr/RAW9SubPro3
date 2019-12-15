@@ -198,7 +198,8 @@ namespace StackOverFlow.Tests
         public void GetWords_PostID_ReturnWords()
         {
             var service = new DataService();
-            var words = service.GetWords(19);
+            int[] postid = {19, 71};
+            var words = service.GetWords(postid);
             Assert.Equal("''", words.First().Word);
             Assert.Equal(2, words.First().Weight);
         }

@@ -11,7 +11,7 @@
                     <th class="text-center">Actions</th>
                 </tr>
                 </thead>
-                <tbody data-bind="foreach: markings">
+                <tbody data-bind="foreach: paginated">
                 <tr>
                     <td data-bind="text: post.id"></td>
                     <td data-bind="text: post.score"></td>
@@ -24,6 +24,11 @@
                 </tr>
                 </tbody>
             </table>
+            <div class="pager">
+                <a href="#" class="previous" data-bind="click: previous, visible: hasPrevious">&lt;</a>
+                <span class="current" data-bind="text: pageNumber"></span>
+                <a href="#" class="next" data-bind="click: next, visible: hasNext">&gt;</a>
+            </div>
         </div>
     </div>
 </div>
