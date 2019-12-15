@@ -10,14 +10,6 @@
             component: "login"
         },
         {
-            name: "Component 1",
-            component: "component1"
-        },
-        {
-            name: "Component 2",
-            component: "component2"
-        },
-        {
             name: "Post",
             component: "post"
         },

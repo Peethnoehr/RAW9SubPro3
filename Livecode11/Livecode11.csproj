@@ -13,4 +13,17 @@
     <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\js\components\wordcloud\cloud.html" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\components\wordcloud\cloud.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\components\component1\component1.html" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\components\component1\component1.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\components\parent\parent.html" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\components\parent\parent.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\css" />
+  </ItemGroup>
+
 </Project>

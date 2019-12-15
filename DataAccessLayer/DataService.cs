@@ -400,11 +400,6 @@ namespace DataAccessLayer
                     Word = grp.Key,
                     Weight = grp.Count()
                 };
-           /*     from word in db.Words
-                where postid.Contains(word.Id) && !(from stopword in db.StopWords 
-                           select stopword.Word).Contains(word.Word)
-                select new SearchWord() {Word = word.Word, Weight = word.Word.Length};
-            */
             var words = query.ToList();
 
             return words;
