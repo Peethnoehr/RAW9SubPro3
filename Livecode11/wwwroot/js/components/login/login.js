@@ -34,11 +34,13 @@
         if (username() !== undefined)
         {
             loggedIn(true);
+            alert("You are now logged in as: "+username());
         }
     },inputusername(),inputpassword())
         };
     validate = false;
     };
+    
     return function (params) {
         username = params.userName;
         email = params.email;
