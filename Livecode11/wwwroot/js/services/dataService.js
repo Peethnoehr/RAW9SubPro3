@@ -12,8 +12,8 @@
     };
 
     var login = async function(callback, inputusername, inputpassword) {
-        //alert("username input: "+inputusername);
-        //alert("password input: "+inputpassword);
+        alert("username input: "+inputusername);
+        alert("password input: "+inputpassword);
         var credentials = {UserName:inputusername, Password:inputpassword};
         var response = await fetch("api/auth/tokens",{
             method: 'POST', // *GET, POST, PUT, DELETE, etc.
