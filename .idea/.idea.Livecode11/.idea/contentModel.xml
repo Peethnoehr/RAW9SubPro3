@@ -44,7 +44,6 @@
         <e p="Controllers" t="Include">
           <e p="AuthController.cs" t="Include" />
           <e p="MarkingController.cs" t="Include" />
-          <e p="NamesController.cs" t="Include" />
           <e p="PostsController.cs" t="Include" />
           <e p="SearchController.cs" t="Include" />
           <e p="WordsController.cs" t="Include" />
@@ -74,9 +73,7 @@
         </e>
         <e p="Startup.cs" t="Include" />
         <e p="wwwroot" t="Include">
-          <e p="css" t="Include">
-            <e p="app.css" t="Include" />
-          </e>
+          <e p="css" t="Include" />
           <e p="index.html" t="Include" />
           <e p="js" t="Include">
             <e p="components" t="Include">
