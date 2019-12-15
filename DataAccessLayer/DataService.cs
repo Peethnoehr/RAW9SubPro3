@@ -1,6 +1,7 @@
 ﻿﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+ using System.Diagnostics;
+ using System.Linq;
 using DataAccessLayer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
@@ -391,9 +392,19 @@ namespace DataAccessLayer
             var query =
                 from word in db.Words
                 where postid.Contains(word.Id) && !(from stopword in db.StopWords 
+                          select stopword.Word).Contains(word.Word)
+                group word by word.Word
+                into grp
+                select new SearchWord()
+                {
+                    Word = grp.Key,
+                    Weight = grp.Count()
+                };
+           /*     from word in db.Words
+                where postid.Contains(word.Id) && !(from stopword in db.StopWords 
                            select stopword.Word).Contains(word.Word)
                 select new SearchWord() {Word = word.Word, Weight = word.Word.Length};
-            
+            */
             var words = query.ToList();
 
             return words;

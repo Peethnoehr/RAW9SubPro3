@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using DataAccessLayer;
+using Livecode11.Models;
 using Xunit;
 
 namespace StackOverFlow.Tests
@@ -210,6 +212,24 @@ namespace StackOverFlow.Tests
             var service = new DataService();
             var stopwords = service.GetStopWords();
             Assert.Equal("a's", stopwords.First().Word);
+        }
+        
+        [Fact]
+        public void getWordsForWordCloud()
+        {
+            var service = new DataService();
+            int[] postArray = new[] {19};
+            var returnWords = service.GetWords(postArray);
+            
+            List<ReturnWord> returnList = new List<ReturnWord>();
+            for (int j = 0; j < returnWords.Count; j++)
+            {
+                ReturnWord tempword = new ReturnWord() {Text = returnWords[j].Word, Weight = returnWords[j].Weight};
+                returnList.Add(tempword);
+            }
+            ReturnWord tmp = new ReturnWord(){Text = "''", Weight = 1};
+            Assert.Equal(tmp.Text, returnList.First().Text);
+            Assert.Equal(tmp.Weight, returnList.First().Weight);
         }
     }
 }
