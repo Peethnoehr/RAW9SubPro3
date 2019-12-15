@@ -6,15 +6,12 @@
                 <div class="row">
                     <div class="col">
                         Searchtext: <input data-bind="value: inputsearch"/>
-                    </div>
-                    <div class="col">
-                        <button data-bind="click: searchPost">Search</button>
+                        <button type="button" class="btn btn-primary" data-bind="click: searchPost">Search</button>
                     </div>
                     <div>
                         <h5>This is the JQCloud</h5>
                         <div id="search"></div>
                     </div>
-
                 </div>
             </article>
             <article>
@@ -49,6 +46,7 @@
                                 <td data-bind="text: title"></td>
                                 <td data-bind="html: body"></td>
                                 <td data-bind="text: score"></td>
+                                <td><button type="button" class="btn btn-primary" data-bind="click: $parent.clickMarkPost">Mark</button></td>
                             </tr>
                             </tbody>
                         </table>
