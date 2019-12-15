@@ -11,6 +11,7 @@
     var width = 200;
     var height = 200;
     var words = ko.observableArray([]);
+    var testArray = [{text: "Lorem", weight: 13},{text: "Ipsum", weight: 10.5},{text: "Dolor", weight: 9.4},{text: "Sit", weight: 8},{text: "KFOADSKFO", weight: 2},{text: "Akol", weight: 5},{text: "Car", weight: 12},{text: "Hello", weight: 5}];
     
     var totalPages = ko.computed(function() {
         var div = Math.floor(searchedPosts().length / nbPerPage);
@@ -47,7 +48,6 @@
         alert("TestCall");
         ds.searchPost( data => {
             searchedPosts(data);
-            alert("Access to arrays: "+JSON.stringify(searchedPosts.Id));
             alert("Searched: "+JSON.stringify(searchedPosts()));
             alert("Marked: "+JSON.stringify(markedPosts()));
             checkPosts(searchedPosts(), markedPosts());
@@ -55,15 +55,22 @@
     },inputsearch(), username(), markedPosts());
     };
     
-    var jQCloud = function(searchedPosts){
+    var jQCloud = function(){
+        alert("Something may be wrong here; JCloud");
+        alert("JCloud SearchedPosts: "+JSON.stringify(searchedPosts()));
             ds.getSearchWords(data => {
-                words(data);
-            $('#cloud').jQCloud(words,
-                {
-                    width: width,
-                    height: height
+                ko.utils.arrayForEach(data, function(item){
+                    words.push(item);
                 });
-        });
+                alert("Data JCloud: "+JSON.stringify(data));
+                alert("Words gotten: "+JSON.stringify(words()));
+                alert("testArray: "+JSON.stringify(testArray));
+            $('#search').jQCloud(words(),
+                {
+                    width: 300,
+                    height: 300
+                });
+        }, searchedPosts());
     };
     
     var getMarkings = function(){
@@ -80,7 +87,6 @@
                 if (a.id === b.postId) {
                     a.markCheck = true;
                     a.markId = b.id;
-                    alert("IsMarked");
                 }
             })
         })

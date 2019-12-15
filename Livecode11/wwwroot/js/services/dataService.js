@@ -6,7 +6,7 @@
     };
 
     var getWords = async function(callback) {
-        var response = await fetch("api/words");
+        var response = await fetch("api/words/test");
         var data = await response.json();
         callback(data);
     };
@@ -221,7 +221,7 @@
         alert("id input: "+inputId);
         var searchwords = {Id:inputId};
         var response = await fetch("api/words",{
-            method: 'PUT', // *GET, POST, PUT, DELETE, etc.
+            method: 'POST', // *GET, POST, PUT, DELETE, etc.
             mode: 'cors', // no-cors, *cors, same-origin
             cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
             credentials: 'same-origin', // include, *same-origin, omit
@@ -231,7 +231,7 @@
             },
             redirect: 'follow', // manual, *follow, error
             referrer: 'no-referrer', // no-referrer, *client
-            body: JSON.stringify(searchwords) // body data type must match "Content-Type" header
+            body: JSON.stringify(inputId) // body data type must match "Content-Type" header
         });
         alert("After fetch");
         var data = await response.json();

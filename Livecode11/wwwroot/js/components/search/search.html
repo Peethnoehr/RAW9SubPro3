@@ -1,33 +1,40 @@
-﻿<div data-bind="text: markedPosts().length"></div>
-<div>
-    <ul class="label" data-bind="foreach: paginated">
-        <li>
-            <input type="text" data-bind="value: title"/>
-            <input type="html" data-bind="value: body"/>
-            <input type="text" data-bind="value: score"/>
-            <button data-bind="click: $parent.clickMarkPost">Mark</button>
-        </li>
-    </ul>
-    <div class="pager">
-        <a href="#" class="previous" data-bind="click: previous, visible: hasPrevious">&lt;</a>
-        <span class="current" data-bind="text: pageNumber"></span>
-        <a href="#" class="next" data-bind="click: next, visible: hasNext">&gt;</a>
+﻿<div id="search"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <div>
+                Searchtext: <input data-bind="value: inputsearch"/>
+            </div>
+            <div>
+                <button data-bind="click: searchPost">Search</button>
+            </div>
+            <div class="pager">
+                <a href="#" class="previous" data-bind="click: previous, visible: hasPrevious">&lt;</a>
+                <span class="current" data-bind="text: pageNumber"></span>
+                <a href="#" class="next" data-bind="click: next, visible: hasNext">&gt;</a>
+            </div>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Body</th>
+                    <th>Score</th>
+                </tr>
+                </thead>
+                <tbody data-bind="foreach: paginated">
+                <tr>
+                    <td data-bind="text: title"></td>
+                    <td data-bind="html: body"></td>
+                    <td data-bind="text: score"></td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="pager">
+                <a href="#" class="previous" data-bind="click: previous, visible: hasPrevious">&lt;</a>
+                <span class="current" data-bind="text: pageNumber"></span>
+                <a href="#" class="next" data-bind="click: next, visible: hasNext">&gt;</a>
+            </div>
+        </div>
     </div>
 </div>
-<div>
-    <div>
-        Searchtext: <input data-bind="value: inputsearch"/>
-    </div>
-    <div>
-        <button data-bind="click: searchPost">Search</button>
-    </div>
-</div>
-
-<ul data-bind="foreach: searchedPosts">
-    <li>
-        <div>Title: <span data-bind="text: title"></span></div>
-        <div>Body: <span data-bind="html: body"></span></div>
-        <div>Score: <span data-bind="text: score"></span></div>
-    </li>
-</ul>
 
