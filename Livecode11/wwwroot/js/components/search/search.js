@@ -8,8 +8,6 @@
     var annotation;
     var pageNumber = ko.observable(0);
     var nbPerPage = 25;
-    var width = 200;
-    var height = 200;
     var words = ko.observableArray([]);
     var testArray = [{text: "Lorem", weight: 13},{text: "Ipsum", weight: 10.5},{text: "Dolor", weight: 9.4},{text: "Sit", weight: 8},{text: "KFOADSKFO", weight: 2},{text: "Akol", weight: 5},{text: "Car", weight: 12},{text: "Hello", weight: 5}];
     
@@ -45,11 +43,8 @@
     };
     
     var searchPost = function(){
-        alert("TestCall");
         ds.searchPost( data => {
             searchedPosts(data);
-            alert("Searched: "+JSON.stringify(searchedPosts()));
-            alert("Marked: "+JSON.stringify(markedPosts()));
             checkPosts(searchedPosts(), markedPosts());
             jQCloud(searchedPosts());
     },inputsearch(), username(), markedPosts());
@@ -74,13 +69,10 @@
     };
     
     var getMarkings = function(){
-        alert("Does getMarkings get called?");
         ds.getMarkings(markedPosts, username);
     };
     
     var checkPosts = function(searchedPosts, markedPosts){
-        alert("CheckPosts SearchedPosts: "+JSON.stringify(searchedPosts));
-        alert("CheckPosts MarkedPosts: "+JSON.stringify(markedPosts));
         searchedPosts.forEach(function (a) {
             a.markCheck = false;
              markedPosts.forEach(function (b){

@@ -21,7 +21,6 @@
         selectedPost = params.selectedPost;
         username = params.userName;
         if(selectedPost() !== undefined){
-            alert("calling getPost("+selectedPost()+");");
             getPostAuto(selectedPost());
             selectedPost(undefined);
         }
