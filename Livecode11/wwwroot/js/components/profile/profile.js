@@ -9,7 +9,6 @@
         },username(),inputpassword(),inputemail());
     };
     var deleteProfile = function() {    
-        alert("delete clicked. Username: "+username());
         ds.deleteProfile(data => {
             username(undefined);
     },username());
