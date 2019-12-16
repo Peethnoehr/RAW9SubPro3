@@ -38,3 +38,11 @@ C:\Users\Marco\source\repos\ExternalSystemExample\RAW9SubPro3\DataAccessLayer\ob
 C:\Users\Marco\source\repos\ExternalSystemExample\RAW9SubPro3\DataAccessLayer\obj\Debug\netcoreapp3.0\DataAccessLayer.AssemblyInfo.cs
 C:\Users\Marco\source\repos\ExternalSystemExample\RAW9SubPro3\DataAccessLayer\obj\Debug\netcoreapp3.0\DataAccessLayer.dll
 C:\Users\Marco\source\repos\ExternalSystemExample\RAW9SubPro3\DataAccessLayer\obj\Debug\netcoreapp3.0\DataAccessLayer.pdb
+C:\Users\Marco\RAW9SubPro3\DataAccessLayer\bin\Debug\netcoreapp3.0\DataAccessLayer.deps.json
+C:\Users\Marco\RAW9SubPro3\DataAccessLayer\bin\Debug\netcoreapp3.0\DataAccessLayer.dll
+C:\Users\Marco\RAW9SubPro3\DataAccessLayer\bin\Debug\netcoreapp3.0\DataAccessLayer.pdb
+C:\Users\Marco\RAW9SubPro3\DataAccessLayer\obj\Debug\netcoreapp3.0\DataAccessLayer.csprojAssemblyReference.cache
+C:\Users\Marco\RAW9SubPro3\DataAccessLayer\obj\Debug\netcoreapp3.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\Marco\RAW9SubPro3\DataAccessLayer\obj\Debug\netcoreapp3.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\Marco\RAW9SubPro3\DataAccessLayer\obj\Debug\netcoreapp3.0\DataAccessLayer.dll
+C:\Users\Marco\RAW9SubPro3\DataAccessLayer\obj\Debug\netcoreapp3.0\DataAccessLayer.pdb
