@@ -1,0 +1,58 @@
+﻿<div class="container-fluid">
+    <div class="row">
+        <section class="col-sm-9 col-lg-8 col-sm-push-3 col-lg-push-2">
+            <article>
+                <h2>This is the Search page which uses an Exact Match Query</h2>
+                <div class="row">
+                    <div class="col">
+                        Searchtext: <input data-bind="value: inputsearch"/>
+                        <button type="button" class="btn btn-primary" data-bind="click: searchPost">Search</button>
+                    </div>
+                    <div>
+                        <h5>This is the JQCloud</h5>
+                        <div id="search"></div>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="row">
+                    <div class="col">
+                        <nav aria-label="...">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" data-bind="click: previous">Previous</a>
+                                </li>
+                                <li class="page-item active">
+                                    <a class="page-link" href="#"><span class="current" data-bind="text: pageNumber"></span></a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" data-bind="click: next">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col">
+                        <h4>This is the Search Results</h4>
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Body</th>
+                                <th>Score</th>
+                            </tr>
+                            </thead>
+                            <tbody data-bind="foreach: paginated">
+                            <tr>
+                                <td data-bind="text: title"></td>
+                                <td data-bind="html: body"></td>
+                                <td data-bind="text: score"></td>
+                                <td><button type="button" class="btn btn-primary" data-bind="click: $parent.clickMarkPost">Mark</button></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+</div>

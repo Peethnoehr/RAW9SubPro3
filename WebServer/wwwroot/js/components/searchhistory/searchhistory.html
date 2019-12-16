@@ -1,0 +1,35 @@
+﻿<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>SearchhistoryId</th>
+                    <th>Search Date</th>
+                    <th>Search Text</th>
+                </tr>
+                </thead>
+                <tbody data-bind="foreach: paginated">
+                <tr>
+                    <td data-bind="text: id"></td>
+                    <td data-bind="text: date"></td>
+                    <td data-bind="text: text"></td>
+                </tr>
+                </tbody>
+            </table>
+            <nav aria-label="...">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#" data-bind="click: previous">Previous</a>
+                    </li>
+                    <li class="page-item active">
+                        <a class="page-link" href="#"><span class="current" data-bind="text: pageNumber"></span></a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" data-bind="click: next">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>

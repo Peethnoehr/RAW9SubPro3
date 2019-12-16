@@ -1,0 +1,56 @@
+﻿<div class="row">
+    <div class="container-fluid">
+        <div class="col-sm-12">
+            <div class="row ">
+                <div class="container-fluid">
+                    <div class="col-sm-4">
+                        <br>
+                        <h1>Profile Information</h1>
+                        <b>Username:</b> <span data-bind="text: username"></span><br>
+                        <b>E-mail:</b> <span data-bind="text: email"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container-fluid">
+                    <div class="col-sm-2">
+                        <br>
+                        <h4>Update your profile</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container-fluid">
+                    <div class="col-sm-2">
+                        <form class="needs-validation" data-bind="submit: changeProfile" novalidate>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Your new email"
+                                       data-bind="value: inputemail" required>
+                                <div class="invalid-feedback">
+                                    This is not a valid email!
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" pattern=".{5,}" class="form-control" id="InputPassword1" placeholder="Your new password" data-bind="value: inputpassword" required>
+                                <div class="invalid-feedback">
+                                    The password must be at least 5 characters!
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Update your
+                                information
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container-fluid">
+                    <div class="col-sm-2">
+                        <br>
+                        <button class="btn btn-warning" data-bind="click: deleteProfile">Delete Profile</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

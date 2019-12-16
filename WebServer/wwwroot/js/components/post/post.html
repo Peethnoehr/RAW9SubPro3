@@ -1,0 +1,84 @@
+﻿<div class="container-fluid">
+    <div class="row mb-4 mt-4">
+        <div class="col-sm-3">
+                <button class="btn btn-primary" data-bind="click: getPost">Open Post</button>
+                <input data-bind="value: inputId" placeholder="Post ID"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div data-bind="with: question()">
+                <div class="row mb-4">
+                    <div class="col-sm-6">
+                        <div class="card bg-light border-secondary">
+                            <div class="card-header bg-secondary text-white">
+                                <h1><span data-bind="text: title"></span></h1>
+                            </div>
+                            <div class="card-body">
+                                <div data-bind="with: post">
+                                    <div data-bind="html: body"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-bind="with: post">
+                    <div class="row mb-4">
+                        <div class="col">
+                            <div data-bind="foreach: comments">
+                                <div class="row mb-2">
+                                    <div class="col-sm-4">
+                                        <div class="card border-secondary">
+                                            <div class="card-header">
+                                                <small><i>Comment score: <span data-bind="text: score"></span></i></small>
+                                            </div>
+                                            <div class="card-body">
+                                                <small>
+                                                    <div data-bind="text: textContain"></div>
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-bind="foreach: answers">
+                    <div class="row mb-4">
+                        <div class="col-sm-6">
+                            <div class="card border-secondary">
+                                <div class="card-header">
+                                    <b>Answer score: <span data-bind="text: score"></span></b>
+                                </div>
+                                <div class="card-body">
+                                    <div data-bind="html: body"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col">
+                            <div data-bind="foreach: comments">
+                                <div class="row mb-2">
+                                    <div class="col-sm-4">
+                                        <div class="card border-secondary">
+                                            <div class="card-header">
+                                                <small><i>Comment score: <span data-bind="text: score"></span></i></small>
+                                            </div>
+                                            <div class="card-body">
+                                                <small>
+                                                    <div data-bind="text: textContain"></div>
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

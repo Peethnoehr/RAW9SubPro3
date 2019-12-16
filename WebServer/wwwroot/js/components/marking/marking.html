@@ -1,0 +1,42 @@
+﻿<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Post ID</th>
+                    <th>Post Score</th>
+                    <th>Tags</th>
+                    <th>Annotation</th>
+                    <th class="text-center">Actions</th>
+                </tr>
+                </thead>
+                <tbody data-bind="foreach: paginated">
+                <tr>
+                    <td data-bind="text: post.id"></td>
+                    <td data-bind="text: post.score"></td>
+                    <td><span data-bind="foreach: post.tags"><span data-bind="text: name"></span>, </span></td>
+                    <td data-bind="text: annotation"></td>
+                    <td class="text-center">
+                        <button class="btn btn-warning mr-2" data-bind="click: $parent.deleteMarking">Remove Marking</button>
+                        <button class="btn btn-primary" data-bind="click: $parent.goToPost">Go to post</button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <nav aria-label="...">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#" data-bind="click: previous">Previous</a>
+                    </li>
+                    <li class="page-item active">
+                        <a class="page-link" href="#"><span class="current" data-bind="text: pageNumber"></span></a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" data-bind="click: next">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>

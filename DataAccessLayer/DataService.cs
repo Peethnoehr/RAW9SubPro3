@@ -1,6 +1,7 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+ using System.Diagnostics;
+ using System.Linq;
 using DataAccessLayer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
@@ -213,7 +214,7 @@ namespace DataAccessLayer
                 where searchhistory.UserName == username
                 select new SearchHistory(){Id = searchhistory.Id, Text = searchhistory.Text, Date = searchhistory.Date, UserName = searchhistory.UserName};
             
-            return db.SearchHistories.ToList();
+            return query.ToList();
         }
         
         public SearchHistory CreateSearchHistory(string text, string username, DateTime date)
@@ -364,11 +365,10 @@ namespace DataAccessLayer
             var search = "java";
             var function = db.Posts
                 .FromSqlRaw("SELECT * FROM exactMatchQuery(\'"+searchtext+"\')")
-                .Select(post => new Post(){Id = post.Id, Body = post.Body, Title = post.Title})
-                .ToList(); 
-
+                .Select(post => new Post(){Id = post.Id, Body = post.Body, Title = post.Title, Score = post.Score})
+                .ToList();
+            
             var posts = function.ToList();
-
             return posts;
         }
 
@@ -383,6 +383,39 @@ namespace DataAccessLayer
                 select new Answer() {Id = answer.Id, QuestionId = answer.QuestionId};
             
             return query.FirstOrDefault();
+        }
+        // Words in post
+        public List<SearchWord> GetWords(int[] postid)
+        {
+            using var db = new StackoverflowContext();
+            
+            var query =
+                from word in db.Words
+                where postid.Contains(word.Id) && !(from stopword in db.StopWords 
+                          select stopword.Word).Contains(word.Word)
+                group word by word.Word
+                into grp
+                select new SearchWord()
+                {
+                    Word = grp.Key,
+                    Weight = grp.Count()
+                };
+            var words = query.ToList();
+
+            return words;
+
+        }
+        public List<StopWord> GetStopWords()
+        {
+            using var db = new StackoverflowContext();
+
+            var query =
+                from word in db.StopWords
+                select word;
+                    
+            var stopwords = query.ToList();
+
+            return stopwords;
         }
     }
 }
