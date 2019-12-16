@@ -30,12 +30,11 @@ namespace WebServiceToken.Controllers
         [HttpPost]
         public ActionResult<Question> GetDetailQuestion([FromBody]Question post)
         {
-            var answer = _dataService.getAnswer(post.Id);     //
-                                                            //This part makes no sense to me
-            if (answer != null)                                //
-            {                                               //If we already have a questionId why would we need to go 
-                post.Id = answer.QuestionId;                //through the hoops of checking the answer of the question 
-            }                                               //for the id of the question???
+            var answer = _dataService.getAnswer(post.Id);     
+            if (answer != null)                                
+            {                                               
+                post.Id = answer.QuestionId;             
+            }                                               
             
             var question = _dataService.GetDetailQuestion(post.Id);
 
@@ -56,7 +55,7 @@ namespace WebServiceToken.Controllers
             _dataService.CreateSearchHistory(searchtext.SearchText, searchtext.UserName, DateTime.Now);
             if (search == null) return NotFound();
 
-            return Ok(search); //Does this actually return anything??
+            return Ok(search); 
         }
     }
 }

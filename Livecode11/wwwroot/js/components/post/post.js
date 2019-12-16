@@ -1,5 +1,4 @@
 ﻿﻿define(["jquery", "knockout", "dataService", "jqcloud"], function($, ko, ds) {
-    var test = ko.observable({a: "abc"});
     var inputId = ko.observable();
     var question = ko.observable();
     var selectedPost;
@@ -27,8 +26,7 @@
         return {
             inputId,
             question,
-            getPost,
-            test
+            getPost
         };
     };
 });

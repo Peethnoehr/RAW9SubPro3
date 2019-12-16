@@ -1,6 +1,5 @@
 ﻿﻿define([], function () {
 
-    const selectPerson = "SELECT_PERSON";
     const selectMenu = "SELECT_MENU";
 
     var subscribers = [];
@@ -19,9 +18,7 @@
 
     var reducer = function(state, action) {
         switch (action.type) {
-            case selectPerson:
-                return Object.assign({}, state, { selectedPerson: action.selectedPerson });
-            case selectMenu:
+           case selectMenu:
                 return Object.assign({}, state, { selectedMenu: action.selectedMenu });
             default:
                 return state;
@@ -35,12 +32,6 @@
     };
 
     var actions = {
-        selectPerson: function(person) {
-            return {
-                type: selectPerson,
-                selectedPerson: person
-            };
-        },
         selectMenu: function(menu) {
             return {
                 type: selectMenu,

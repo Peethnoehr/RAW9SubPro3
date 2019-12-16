@@ -1,7 +1,7 @@
 ﻿﻿define(["jquery", "knockout", "dataService", "jqcloud"], function($, ko, ds) {
     var inputusername = ko.observable();
     var inputpassword = ko.observable();
-    var username; // = ko.observable("initialValue");
+    var username;
     var email;
     var validate = false;
     var loggedIn = ko.observable(false);

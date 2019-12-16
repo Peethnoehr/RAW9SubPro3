@@ -17,14 +17,6 @@
         return markings.slice(first, first + nbPerPage);
     });
 
-    var hasPrevious = ko.computed(function() {
-        return pageNumber() !== 0;
-    });
-
-    var hasNext = ko.computed(function() {
-        return pageNumber() !== totalPages();
-    });
-
     var next = function() {
         if(pageNumber() < totalPages()) {
             pageNumber(pageNumber() + 1);
@@ -36,12 +28,10 @@
             pageNumber(pageNumber() - 1);
         }
     };
-
-
+    
     var deleteMarking = function(marking){
         markings.remove(marking);
         ds.deleteMark(data => {
-            alert(JSON.stringify(data));
     }, username, marking.id);
     };
     var goToPost = function(marking){
@@ -59,12 +49,9 @@
             deleteMarking,
             goToPost,
             paginated,
-            hasPrevious,
-            hasNext,
-            next,
-            previous,
             pageNumber,
-            nbPerPage
+            next,
+            previous
         };
     };
 });

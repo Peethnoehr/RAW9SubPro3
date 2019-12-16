@@ -16,7 +16,6 @@ namespace WebServiceToken
     {
         public static void Main(string[] args)
         {
-            Debug.WriteLine("TEST");
             CreateHostBuilder(args).Build().Run();
         }
 

@@ -17,24 +17,24 @@ namespace StackOverFlow.Tests
             var service = new DataService();
             var users = service.GetUsers();
             Assert.Equal(2, users.Count);
-            Assert.Equal("Baptiste", users.First().UserName);
+            Assert.Equal("Test2", users.First().UserName);
         }
 
         [Fact]
         public void GetUser_ValidUsername_ReturnsUserObject()
         {
             var service = new DataService();
-            var user = service.GetUser("Baptiste");
-            Assert.Equal("Baptiste", user.UserName);
-            Assert.Equal("auba@ruc.dk",user.Email);
+            var user = service.GetUser("Test2");
+            Assert.Equal("Test2", user.UserName);
+            Assert.Equal("test2@test.test",user.Email);
         }
 
         [Fact]
         public void CreateUser_ValidData_CreateUserAndRetunsNewObject()
         {
             var service = new DataService();
-            var user = service.CreateUser("Test", "testpw", "test@test.test","test",DateTime.Now);
-            Assert.Equal("Test", user.UserName);
+            var user = service.CreateUser("Test3", "testpw", "test@test.test","test",DateTime.Now);
+            Assert.Equal("Test3", user.UserName);
             Assert.Equal("testpw", user.Password);
             Assert.Equal("test@test.test", user.Email);
 
@@ -43,10 +43,10 @@ namespace StackOverFlow.Tests
         }
 
         [Fact]
-        public void DeleteCategory_ValidId_RemoveTheCategory()
+        public void DeleteUser_ValidId_RemoveTheUser()
         {
             var service = new DataService();
-            var user = service.CreateUser("Test", "testpw", "test@test.test","test",DateTime.Now);
+            var user = service.CreateUser("Test3", "testpw", "test@test.test","test",DateTime.Now);
             var result = service.DeleteUser(user.UserName);
             Assert.True(result);
             user = service.GetUser(user.UserName);
@@ -57,7 +57,7 @@ namespace StackOverFlow.Tests
         public void UpdateUser_DisplayName_Password_Email()
         {
             var service = new DataService();
-            var user = service.CreateUser("Test", "testpw", "test@test.test","test",DateTime.Now);
+            var user = service.CreateUser("Test3", "testpw", "test@test.test","test",DateTime.Now);
 
             var result1 = service.UpdateUser(user.UserName, "UpdatedPassword1","UpdatedEmail1", "UpdateSalt");
             Assert.True(result1);
@@ -95,8 +95,8 @@ namespace StackOverFlow.Tests
         public void CreateMarking_ValidData_CreateMarkingrWithPostAndRetunsNewObject()
         {
             var service = new DataService();
-            var marking = service.CreateMarking("testpw", "Baptiste",19,null,DateTime.Now);
-            Assert.Equal(1, marking.Id);
+            var marking = service.CreateMarking("testpw", "Test",19,null,DateTime.Now);
+            Assert.Equal(25, marking.Id);
             Assert.Equal("testpw", marking.Annotation);
 
             // cleanup
@@ -107,7 +107,7 @@ namespace StackOverFlow.Tests
         public void UpdateMarking_Annotation()
         {
             var service = new DataService();
-            var marking = service.CreateMarking("testpw", "Baptiste",19,null,DateTime.Now);
+            var marking = service.CreateMarking("testpw", "Test2",19,null,DateTime.Now);
 
             var result1 = service.UpdateMarking(1,"UpdateAnnotation");
             Assert.True(result1);
@@ -120,7 +120,7 @@ namespace StackOverFlow.Tests
         public void GetAllMarking_Username_ReturnsAllMarkings()
         {
             var service = new DataService();
-            var markings = service.GetMarkings("Baptiste");
+            var markings = service.GetMarkings("Test3");
             Assert.Equal(19, markings.First().PostId);
             Assert.Equal(19, markings.First().Post.Id);
             Assert.Equal("algorithm", markings.First().Post.Tags.First().Name);
@@ -132,22 +132,22 @@ namespace StackOverFlow.Tests
         public void CreateSearchHistory_ValidData_CreateSearchHistoryWithPostAndRetunsNewObject()
         {
             var service = new DataService();
-            var searchHistory = service.CreateSearchHistory("testsearch", "Baptiste",DateTime.Now);
-            Assert.Equal(1, searchHistory.Id);
+            var searchHistory = service.CreateSearchHistory("testsearch", "Test2",DateTime.Now);
+            Assert.Equal(183, searchHistory.Id);
             Assert.Equal("testsearch", searchHistory.Text);
 
             // cleanup
-            service.DeleteMarking(searchHistory.Id);
+            service.DeleteSearchHistory(searchHistory.Id);
         }
 
         [Fact]
         public void GetAllSearchHistories_Username_ReturnsAllSearchHistories()
         {
             var service = new DataService();
-            var searchHistory = service.CreateSearchHistory("testsearch", "Baptiste",DateTime.Now);
-            var searchHistories = service.GetSearchHistories("Baptiste");
-            Assert.Equal(1, searchHistories.First().Id);
-            Assert.Equal("testsearch", searchHistories.First().Text);
+            var searchHistory = service.CreateSearchHistory("testsearch", "Test2",DateTime.Now);
+            var searchHistories = service.GetSearchHistories("Test2");
+            Assert.Equal(2, searchHistories.First().Id);
+            Assert.Equal("odksf", searchHistories.First().Text);
         }
         
         // Comment
@@ -194,16 +194,6 @@ namespace StackOverFlow.Tests
             Assert.Equal(406790, posts.First().Id);
             Assert.Equal("<p>Okay, I said I'd give a bit more detail on my \"sealed classes\" opinion. I guess one way to show the kind of answer I'm interested in is to give one myself :)</p>&#xA;&#xA;<p><strong>Opinion: Classes should be sealed by default in C#</strong></p>&#xA;&#xA;<p><strong>Reasoning:</strong></p>&#xA;&#xA;<p>There's no doubt that inheritance is powerful. However, it has to be somewhat guided. If someone derives from a base class in a way which is completely unexpected, this can break the assumptions in the base implementation. Consider two methods in the base class, where one calls another - if these methods are both virtual, then that implementation detail has to be documented, otherwise someone could quite reasonably override the second method and expect a call to the first one to work. And of course, as soon as the implementation is documented, it can't be changed... so you lose flexibility.</p>&#xA;&#xA;<p>C# took a step in the right direction (relative to Java) by making methods sealed by default. However, I believe a further step - making <em>classes</em> sealed by default - would have been even better. In particular, it's easy to override methods (or not explicitly seal existing virtual methods which you don't override) so that you end up with unexpected behaviour. This wouldn't actually stop you from doing anything you can currently do - it's just changing a <em>default</em>, not changing the available options. It would be a \"safer\" default though, just like the default access in C# is always \"the most private visibility available at that point.\"</p>&#xA;&#xA;<p>By making people <em>explicitly</em> state that they wanted people to be able to derive from their classes, we'd be encouraging them to think about it a bit more. It would also help me with my laziness problem - while I know I <em>should</em> be sealing almost all of my classes, I rarely actually remember to do so :(</p>&#xA;&#xA;<p><strong>Counter-argument:</strong></p>&#xA;&#xA;<p>I can see an argument that says that a class which has no virtual methods can be derived from relatively safely without the extra inflexibility and documentation usually required.  I'm not sure how to counter this one at the moment, other than to say that I believe the harm of accidentally-unsealed classes is greater than that of accidentally-sealed ones.</p>&#xA;", posts.First().Body);
             Assert.Equal("Levenshtein to Damerau-Levenshtein", posts[1].Title);
-        }
-
-        [Fact]
-        public void GetWords_PostID_ReturnWords()
-        {
-            var service = new DataService();
-            int[] postid = {19, 71};
-            var words = service.GetWords(postid);
-            Assert.Equal("''", words.First().Word);
-            Assert.Equal(2, words.First().Weight);
         }
 
         [Fact]
