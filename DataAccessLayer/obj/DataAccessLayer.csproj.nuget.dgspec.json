@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\peter\\Documents\\GitHub\\RAW9SubPro3\\DataAccessLayer\\DataAccessLayer.csproj": {}
+    "C:\\Users\\Marco\\source\\repos\\ExternalSystemExample\\RAW9SubPro3\\DataAccessLayer\\DataAccessLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\peter\\Documents\\GitHub\\RAW9SubPro3\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "C:\\Users\\Marco\\source\\repos\\ExternalSystemExample\\RAW9SubPro3\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\peter\\Documents\\GitHub\\RAW9SubPro3\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\Marco\\source\\repos\\ExternalSystemExample\\RAW9SubPro3\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "C:\\Users\\peter\\Documents\\GitHub\\RAW9SubPro3\\DataAccessLayer\\DataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\peter\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\peter\\Documents\\GitHub\\RAW9SubPro3\\DataAccessLayer\\obj\\",
+        "projectPath": "C:\\Users\\Marco\\source\\repos\\ExternalSystemExample\\RAW9SubPro3\\DataAccessLayer\\DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\Marco\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Marco\\source\\repos\\ExternalSystemExample\\RAW9SubPro3\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\peter\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Marco\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

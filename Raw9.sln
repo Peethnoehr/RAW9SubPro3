@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29503.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Livecode11", "Livecode11\Livecode11.csproj", "{77A283DA-25DB-4FD6-AFC9-F1FFFF341E9F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServer", "WebServer\WebServer.csproj", "{77A283DA-25DB-4FD6-AFC9-F1FFFF341E9F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{6C68C410-A9FA-4D9E-9FA9-B1D39B620F5B}"
 EndProject

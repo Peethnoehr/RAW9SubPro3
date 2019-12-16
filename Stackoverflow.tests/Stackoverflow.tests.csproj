@@ -17,7 +17,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj" />
-      <ProjectReference Include="..\Livecode11\Livecode11.csproj" />
+      <ProjectReference Include="..\WebServer\WebServer.csproj" />
     </ItemGroup>
 
 </Project>

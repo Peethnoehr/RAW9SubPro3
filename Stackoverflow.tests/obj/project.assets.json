@@ -2266,7 +2266,7 @@
           "bin/placeholder/DataAccessLayer.dll": {}
         }
       },
-      "Livecode11/1.0.0": {
+      "WebServer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
@@ -2275,10 +2275,10 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": "3.0.0"
         },
         "compile": {
-          "bin/placeholder/Livecode11.dll": {}
+          "bin/placeholder/WebServer.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Livecode11.dll": {}
+          "bin/placeholder/WebServer.dll": {}
         }
       }
     }
@@ -2759,7 +2759,7 @@
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "sha512": "a/iSwnRZb+LHFk49hQOyThh/ZNC3vsbZsF65XwQIb863qF6msmhdQtxGXFL28Ob2NsCz/drEj28BJd/YPpLRBg==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
@@ -3089,7 +3089,7 @@
       ]
     },
     "Newtonsoft.Json/10.0.1": {
-      "sha512": "ebWzW9j2nwxQeBo59As2TYn7nYr9BHicqqCwHOD1Vdo+50HBtLPuqdiCYJcLdTRknpYis/DSEOQz5KmZxwrIAg==",
+      "sha512": "MOUhQfeI43upq9QiEv+7YYTDQPtEZEj9xB50MgplO1XF/aumP0f+TCYIHpZEmfsiahJJaXt/gdRFYLFEoF2VyQ==",
       "type": "package",
       "path": "newtonsoft.json/10.0.1",
       "hasTools": true,
@@ -3773,12 +3773,11 @@
       ]
     },
     "System.ComponentModel.TypeConverter/4.3.0": {
-      "sha512": "16pQ6P+EdhcXzPiEK4kbA953Fu0MNG2ovxTZU81/qsCd1zPRsKc3uif5NgvllCY598k6bI0KUyKW8fanlfaDQg==",
+      "sha512": "HZiP0DwTHJ+C+rdFqP47nBYUh5283kcwXIGY2zOVVhsJmVI/2tYiX2zNRdjRQRHsTox58Ydkec6h0pWSh8wAsw==",
       "type": "package",
       "path": "system.componentmodel.typeconverter/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4904,7 +4903,7 @@
       ]
     },
     "System.Net.Http/4.1.0": {
-      "sha512": "ULq9g3SOPVuupt+Y3U+A37coXzdNisB1neFCSKzBwo182u0RDddKJF8I5+HfyXqK6OhJPgeoAwWXrbiUXuRDsg==",
+      "sha512": "Ve8vcneE50S6BpvAzdFYbtcUy5I5q3JMZQYpBV9PLp+ISTr9F26DPUbRSTl0qOlcgFxO1NmJ8JXW3vjTkyL9fA==",
       "type": "package",
       "path": "system.net.http/4.1.0",
       "files": [
@@ -6285,7 +6284,7 @@
       ]
     },
     "System.Security.Cryptography.Cng/4.5.0": {
-      "sha512": "WG3r7EyjUe9CMPFSs6bty5doUqT+q9pbI80hlNzo2SkPkZ4VTuZkGWjpp77JB8+uaL4DFPRdBsAY+DX3dBK92A==",
+      "sha512": "DsHSZoBeVe2bAknPwdrgnCQlgd80XRcS8V3ev952BF8ZE4jUi2i7+tIaFth6md9nure1SJL2hfQt4IgjpNybxQ==",
       "type": "package",
       "path": "system.security.cryptography.cng/4.5.0",
       "files": [
@@ -7523,38 +7522,42 @@
       "path": "../DataAccessLayer/DataAccessLayer.csproj",
       "msbuildProject": "../DataAccessLayer/DataAccessLayer.csproj"
     },
-    "Livecode11/1.0.0": {
+    "WebServer/1.0.0": {
       "type": "project",
-      "path": "../Livecode11/Livecode11.csproj",
-      "msbuildProject": "../Livecode11/Livecode11.csproj"
+      "path": "../WebServer/WebServer.csproj",
+      "msbuildProject": "../WebServer/WebServer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
       "DataAccessLayer >= 1.0.0",
-      "Livecode11 >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.0.0",
       "Microsoft.NET.Test.Sdk >= 16.2.0",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 3.0.0",
+      "WebServer >= 1.0.0",
       "coverlet.collector >= 1.0.1",
       "xunit >= 2.4.0",
       "xunit.runner.visualstudio >= 2.4.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\peter\\.nuget\\packages\\": {}
+    "C:\\Users\\Marco\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\peter\\Documents\\GitHub\\RAW9SubPro3\\Stackoverflow.tests\\Stackoverflow.tests.csproj",
+      "projectUniqueName": "C:\\Users\\Marco\\source\\repos\\ExternalSystemExample\\RAW9SubPro3\\Stackoverflow.tests\\Stackoverflow.tests.csproj",
       "projectName": "Stackoverflow.tests",
-      "projectPath": "C:\\Users\\peter\\Documents\\GitHub\\RAW9SubPro3\\Stackoverflow.tests\\Stackoverflow.tests.csproj",
-      "packagesPath": "C:\\Users\\peter\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\peter\\Documents\\GitHub\\RAW9SubPro3\\Stackoverflow.tests\\obj\\",
+      "projectPath": "C:\\Users\\Marco\\source\\repos\\ExternalSystemExample\\RAW9SubPro3\\Stackoverflow.tests\\Stackoverflow.tests.csproj",
+      "packagesPath": "C:\\Users\\Marco\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Marco\\source\\repos\\ExternalSystemExample\\RAW9SubPro3\\Stackoverflow.tests\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\peter\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Marco\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7567,11 +7570,11 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\peter\\Documents\\GitHub\\RAW9SubPro3\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "C:\\Users\\peter\\Documents\\GitHub\\RAW9SubPro3\\DataAccessLayer\\DataAccessLayer.csproj"
+            "C:\\Users\\Marco\\source\\repos\\ExternalSystemExample\\RAW9SubPro3\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\Marco\\source\\repos\\ExternalSystemExample\\RAW9SubPro3\\DataAccessLayer\\DataAccessLayer.csproj"
             },
-            "C:\\Users\\peter\\Documents\\GitHub\\RAW9SubPro3\\Livecode11\\Livecode11.csproj": {
-              "projectPath": "C:\\Users\\peter\\Documents\\GitHub\\RAW9SubPro3\\Livecode11\\Livecode11.csproj"
+            "C:\\Users\\Marco\\source\\repos\\ExternalSystemExample\\RAW9SubPro3\\WebServer\\WebServer.csproj": {
+              "projectPath": "C:\\Users\\Marco\\source\\repos\\ExternalSystemExample\\RAW9SubPro3\\WebServer\\WebServer.csproj"
             }
           }
         }
